@@ -608,7 +608,7 @@ transition: all 0.3s;
 	margin-top: -20px;
 }
 .slider-products:hover {
-	z-index: 2;
+	z-index: 3;
 }
 .item-product__image {
 	height: 188px;
