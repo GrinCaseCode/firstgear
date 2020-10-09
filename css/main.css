@@ -719,7 +719,6 @@ letter-spacing: 0.02em;
 color: #151515;
 	display: block;
 	position: absolute;
-	transition: all 0.3s;
 }
 .item-category__image {
 	position: absolute;
