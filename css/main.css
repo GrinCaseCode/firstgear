@@ -244,7 +244,7 @@ border-radius: 5px;
 	background-image: url(../img/ic_personal2.svg);
 }
 .item-personal_basket .item-personal__icon {
-	background-image: url(../img/ic_personal2.svg);
+	background-image: url(../img/ic_personal3.svg);
 }
 .item-personal_favorites .item-personal__icon::after {
 	background-image: url(../img/ic_personal1_hover.svg);
@@ -253,7 +253,7 @@ border-radius: 5px;
 	background-image: url(../img/ic_personal2_hover.svg);
 }
 .item-personal_basket .item-personal__icon::after {
-	background-image: url(../img/ic_personal2_hover.svg);
+	background-image: url(../img/ic_personal3_hover.svg);
 }
 .item-personal__icon img {
 	max-width: 100%;
