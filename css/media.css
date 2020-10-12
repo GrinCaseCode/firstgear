@@ -418,6 +418,9 @@
 	.item-product__code {
 		display: none;
 	}
+	.item-product::after {
+		display: none;
+	}
 	.slider-products .slick-slide {
 		margin-bottom: 0;
 	}
