@@ -40,6 +40,50 @@ $("#callback button.btn-main").click(function(e) {
 	e.preventDefault();
 	$.fancybox.open("#thanks-callback");
 });
+
+/*range slider*/
+var $range = $(".range-catalog__input"),
+$from = $(".control-input__from"),
+$to = $(".control-input__to"),
+min = 0,
+max = 6000;
+$range.ionRangeSlider({
+	type: "double",
+	min: min,
+	max: max,
+	from: 0,
+        to: 3000,
+	prettify_enabled: true,
+	onChange: function(data) {
+		updateValues()
+	}
+});
+
+
+$range = $range.data("ionRangeSlider");
+var updateValues = function() {
+	var res = $range.result;
+	$from.val(res.from, true);
+	$to.val(res.to,true)
+};
+$from.on("focus", function() {
+	this.value = this.value;
+	this.focus();
+	this.selectionStart = this.value.length
+}).on("input", function() {
+	$range.update({
+		from: this.value
+	})
+}).on("blur", updateValues);
+$to.on("focus", function() {
+	this.value = this.value;
+	this.focus();
+	this.selectionStart = this.value.length
+}).on("input", function() {
+	$range.update({
+		to: this.value
+	})
+}).on("blur", updateValues)
 /*input*/
 
 $('.rfield').keyup(function(){
@@ -109,6 +153,7 @@ $(".link-text").click(function(e) {
 		{
 			breakpoint: 768,
 			settings: {
+				infinite: true,
 				variableWidth: true,
 				arrows: false,
 			} 
