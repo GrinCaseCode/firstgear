@@ -1,37 +1,67 @@
 $(document).ready(function() {
 
 
+//кнопка sandwich
+$(".btn-menu").click(function() {
+	if ($(".menu-mobile").is(":hidden")) {
+		$(".menu-mobile").slideDown(200);
+		$("body").addClass("overflow_hidden");
+		$(".overlay-mobile").fadeIn(200);
+	} else {
+		$(".menu-mobile").slideUp(200);
+		$("body").removeClass("overflow_hidden");
+		$(".overlay-mobile").fadeOut(200)
+	}
 
-	//плавный скролл
-	$(".navigat li a").mPageScroll2id();
+});
 
+$(".menu-mobile a").click(function() {
+	$(".menu-mobile").slideUp(200);
+	$("body").removeClass("overflow_hidden");
+	$(".overlay-mobile").fadeOut(200)
+});
 
-	//кнопка sandwich
-	$(".btn_nav").click(function() {
-		$(".sandwich").toggleClass("active");
-		if ($(".menu").is(":hidden")) {
-			$(".menu").slideDown(600);
-		} else {
-			$(".menu").slideUp(600);
-		}
-		
-	});
+$(document).mouseup(function (e){ 
+	var menu_mob = $(".menu-mobile"); 
+	if (!menu_mob.is(e.target) 
+		&& menu_mob.has(e.target).length === 0) { 
+		$(".menu-mobile").slideUp(200);
+	$("body").removeClass("overflow_hidden");
+	$(".overlay-mobile").fadeOut(200)
+}
+});
 
-	$(".menu a").click(function() {
-			$(".menu").slideUp(600);
-			$(".sandwich").removeClass("active");
-		});
+// mask-input 
 
-	/*text more*/
-	$(".link-text").click(function(e) {
-		e.preventDefault();
-		if ($(this).parent().find(".hidden-text").is(":hidden")) {
-			$(this).parent().find(".hidden-text").slideDown(200);
-		} else {
-			$(this).parent().find(".hidden-text").slideUp(200);
-		}
-		
-	});
+$(".input-phone").mask("+7 (999) 999-99-99");
+
+/*send form*/
+$("#callback button.btn-main").click(function(e) {
+	e.preventDefault();
+	$.fancybox.open("#thanks-callback");
+});
+/*input*/
+
+$('.rfield').keyup(function(){
+	if($(this).val() != ''){
+		$(this).addClass('active');
+		$(this).parent().parent(".form-search").addClass("active-search");
+	} else {
+		$(this).removeClass('active');
+		$(this).parent().parent(".form-search").removeClass("active-search");
+	}
+});
+
+/*text more*/
+$(".link-text").click(function(e) {
+	e.preventDefault();
+	if ($(this).parent().find(".hidden-text").is(":hidden")) {
+		$(this).parent().find(".hidden-text").slideDown(200);
+	} else {
+		$(this).parent().find(".hidden-text").slideUp(200);
+	}
+
+});
 
 	//слайдер
 
@@ -42,7 +72,15 @@ $(document).ready(function() {
 		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-angle-right"></i><div/>',
 		infinite: true,
 		slidesToShow: 1,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+		responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				arrows: false,
+			} 
+		}
+		]
 	});
 
 	$('.slider-products').slick({
@@ -52,9 +90,30 @@ $(document).ready(function() {
 		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-angle-right"></i><div/>',
 		infinite: false,
 		swipeToSlide: true,
-    	touchThreshold: 1000,
+		touchThreshold: 1000,
 		slidesToShow: 5,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+		responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 4,
+			} 
+		},
+		{
+			breakpoint: 993,
+			settings: {
+				slidesToShow: 3,
+			} 
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				variableWidth: true,
+				arrows: false,
+			} 
+		}
+		]
 	});
 
 
