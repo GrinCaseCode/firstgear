@@ -916,6 +916,11 @@ position: relative;
 	.item-advantage {
 		font-size: 12px;
 	}
+	.bottom-sidebar,
+	.sorting-mobile, 
+	.catalog-sidebar {
+		max-width: 275px;
+	}
 }
 
 /* Custom, iPhone Retina */
