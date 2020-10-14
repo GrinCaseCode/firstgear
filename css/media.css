@@ -921,6 +921,9 @@ position: relative;
 	.catalog-sidebar {
 		max-width: 275px;
 	}
+	.list-setting-filter li a {
+		padding-right: 31px;
+	}
 }
 
 /* Custom, iPhone Retina */

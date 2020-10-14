@@ -51,7 +51,7 @@ $(".btn-transparent_close").click(function(e) {
 	e.preventDefault();
 	$(".catalog-sidebar, .sorting-mobile").slideUp(200);
 	$("body").removeClass("overflow_hidden");
-	$(".overlay-mobile").fadeOut(200)
+	$(".overlay-mobile").fadeOut(200);
 });
 
 $(".сontrols-catalog__btn_sorting").click(function() {
@@ -64,7 +64,7 @@ $(".сontrols-catalog__btn_sorting").click(function() {
 		&& sorting_mib.has(e.target).length === 0) { 
 		$(".sorting-mobile").slideUp(200);
 	$("body").removeClass("overflow_hidden");
-	$(".overlay-mobile").fadeOut(200)
+	$(".overlay-mobile").fadeOut(200);
 }
 });
 });
