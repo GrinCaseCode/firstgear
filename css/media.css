@@ -1170,6 +1170,12 @@
 	.row_section > div {
 		padding: 0;
 	}
+	.item-product__like.active:hover::before {
+		display: none;
+	}
+	.card .item-product__price_new span {
+		line-height: 18px;
+	}
 }
 @media only screen and (max-width : 576px) {
 	.hidden_smallmobile {
