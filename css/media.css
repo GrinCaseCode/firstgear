@@ -675,9 +675,12 @@
 	.slider-for .slick-dots li button {
 		border-color: #151515;
 	}
-	.slick-dots li.slick-active button {
+	.slider-for .slick-dots li.slick-active button {
 		border-color:#0756A5;
 		background-color: #0756A5;
+	}
+	.slider-for .slick-dots li button:hover {
+		border-color:#0756A5;
 	}
 	.slider-for .slick-dots {
 		bottom: 25px;
