@@ -1,0 +1,1931 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="libs/ion.rangeSlider-master/css/ion.rangeSlider.min.css" />
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css?ver=1.12" />
+	<link rel="stylesheet" href="css/media.css?ver=1.12" />
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<div class="menu-mobile">
+			<a href="#" class="logo">
+				<img src="img/logo.svg" alt="alt">
+			</a>
+			<ul class="nav-mobile">
+				<li><a href="#"><span class="nav-mobile__icon nav-mobile__icon_icon1"></span>Каталог товаров <i class="far fa-angle-right"></i></a></li>
+				<li class="nav-mobile__sale"><a href="#"><span class="nav-mobile__icon nav-mobile__icon_icon2"></span>Горячие скидки <i class="far fa-angle-right"></i></a></li>
+				<li><a href="#"><span class="nav-mobile__icon nav-mobile__icon_icon3"></span>Автосервис <i class="far fa-angle-right"></i></a></li>
+			</ul>
+			<div class="menu-mobile__name">Сергей Иванов</div>
+			<ul class="links-menu">
+				<li><a href="#"><span class="links-menu__icon links-menu__icon_1"></span>Личные данные</a></li>
+				<li><a href="#"><span class="links-menu__icon links-menu__icon_2"></span>Мои заказы</a></li>
+				<li><a href="#"><span class="links-menu__icon links-menu__icon_3"></span>Избранное <strong> (2)</strong></a></li>
+			</ul>
+			<a href="#" class="btn-login"><span class="btn-login__icon"></span>Выйти из аккаунта</a>
+			<div class="menu-mobile__bottom">
+				<ul>
+					<li>
+						<a href="tel:0981234567" class="item-phone">098 123 45 67</a>
+					</li>
+					<li>
+						<a href="tel:0981234567" class="item-phone">098 123 45 67</a>
+					</li>
+					<li>
+						<a href="tel:0981234567" class="item-phone">098 123 45 67</a>
+					</li>
+				</ul>
+				<div class="popup-phones__bottom">
+					<p><span>График работы:</span></p>
+					<p>в рабочие дни с 9:00 до 19:00</p>
+					<p>суббота с 9:00 до 15:00</p>
+					<a href="#callback" class="btn-transparent btn-transparent_black fancybox">Обратный звонок</a>
+				</div>
+			</div>
+		</div>
+
+		<header class="header header_page">
+
+			<div class="header__wrap">
+				<div class="container">
+					<div class="header__top">
+						<div class="btn-menu"></div>
+						<a href="#" class="logo">
+							<img src="img/logo.svg" alt="alt">
+						</a>
+						<div class="header__phone">
+							<a href="tel:0981234567" class="item-phone">098 123 45 67</a>
+							<div class="popup-phones">
+								<div class="popup-phones__top">
+									<ul>
+										<li>
+											<a href="tel:0981234567" class="item-phone">098 123 45 67</a>
+										</li>
+										<li>
+											<a href="tel:0981234567" class="item-phone">098 123 45 67</a>
+										</li>
+										<li>
+											<a href="tel:0981234567" class="item-phone">098 123 45 67</a>
+										</li>
+									</ul>
+									<a href="mailto:firstgera_info@gmail.com" class="item-mail">firstgera_info@gmail.com</a>
+								</div>
+								<div class="popup-phones__bottom">
+									<p><span>График работы:</span></p>
+									<p>в рабочие дни с 9:00 до 19:00</p>
+									<p>суббота с 9:00 до 15:00</p>
+									<a href="#callback" class="btn-transparent btn-transparent_black fancybox">Обратный звонок</a>
+								</div>
+							</div>
+						</div>
+						<div class="form-search">
+							<form>
+								<input type="text" class="rfield" placeholder="Поиск в каталоге товаров" required="required">
+								<div class="btn-search"></div>
+								<div class="btn-clear-search"></div>
+							</form>
+							<div class="popup-search">
+								<div class="popup-search__top">
+									<div class="popup-search__title">Найденные категории</div>
+									<ul class="popup-search__categories">
+										<li><a href="#">Полироли (167)</a></li>
+										<li><a href="#">Чистящие средства (6)</a></li>
+									</ul>
+								</div>
+								<div class="wrap-search">
+									<div class="popup-search__title">Найденные товары</div>
+									<a href="#" class="item-search">
+										<span class="item-search__image">
+											<img src="img/item_search1.jpg" alt="alt">
+										</span>
+										<span class="item-search__name">Масло моторное DIESEL LEICHTLAUF <br>10W-40 5 Л 8034</span>
+										<span class="item-search__right">
+											<span class="price-prod price-prod_old"><span>1200</span> грн.</span>
+											<span class="price-prod price-prod_new"><span>800</span> грн.</span>
+										</span>
+									</a>
+									<a href="#" class="item-search">
+										<span class="item-search__image">
+											<img src="img/item_search2.jpg" alt="alt">
+										</span>
+										<span class="item-search__name">Моторное масло MOBIL 1 <br>ESP 5W-30 4л</span>
+										<span class="item-search__right">
+											<span class="price-prod"><span>1000</span> грн.</span>
+										</span>
+									</a>
+									<a href="#" class="item-search">
+										<span class="item-search__image">
+											<img src="img/item_search1.jpg" alt="alt">
+										</span>
+										<span class="item-search__name">Масло моторное DIESEL LEICHTLAUF <br>10W-40 5 Л 8034</span>
+										<span class="item-search__right">
+											<span class="price-prod price-prod_old"><span>1200</span> грн.</span>
+											<span class="price-prod price-prod_new"><span>800</span> грн.</span>
+										</span>
+									</a>
+									<a href="#" class="item-search">
+										<span class="item-search__image">
+											<img src="img/item_search2.jpg" alt="alt">
+										</span>
+										<span class="item-search__name">Моторное масло MOBIL 1 <br>ESP 5W-30 4л</span>
+										<span class="item-search__right">
+											<span class="price-prod"><span>1000</span> грн.</span>
+										</span>
+									</a>
+									<a href="#" class="item-search">
+										<span class="item-search__image">
+											<img src="img/item_search1.jpg" alt="alt">
+										</span>
+										<span class="item-search__name">Масло моторное DIESEL LEICHTLAUF <br>10W-40 5 Л 8034</span>
+										<span class="item-search__right">
+											<span class="price-prod price-prod_old"><span>1200</span> грн.</span>
+											<span class="price-prod price-prod_new"><span>800</span> грн.</span>
+										</span>
+									</a>
+									<a href="#" class="item-search">
+										<span class="item-search__image">
+											<img src="img/item_search2.jpg" alt="alt">
+										</span>
+										<span class="item-search__name">Моторное масло MOBIL 1 <br>ESP 5W-30 4л</span>
+										<span class="item-search__right">
+											<span class="price-prod"><span>1000</span> грн.</span>
+										</span>
+									</a>
+									<a href="#" class="item-search">
+										<span class="item-search__image">
+											<img src="img/item_search1.jpg" alt="alt">
+										</span>
+										<span class="item-search__name">Масло моторное DIESEL LEICHTLAUF <br>10W-40 5 Л 8034</span>
+										<span class="item-search__right">
+											<span class="price-prod price-prod_old"><span>1200</span> грн.</span>
+											<span class="price-prod price-prod_new"><span>800</span> грн.</span>
+										</span>
+									</a>
+									<a href="#" class="item-search">
+										<span class="item-search__image">
+											<img src="img/item_search2.jpg" alt="alt">
+										</span>
+										<span class="item-search__name">Моторное масло MOBIL 1 <br>ESP 5W-30 4л</span>
+										<span class="item-search__right">
+											<span class="price-prod"><span>1000</span> грн.</span>
+										</span>
+									</a>
+								</div>
+								<a href="#" class="show-search">Посмотреть все результаты поиска <i class="far fa-angle-right"></i></a>
+							</div>
+						</div>
+						<div class="header__right">
+							<a href="#" class="mobile-search-btn"></a>
+							<div class="wrap-personal">
+								<a href="#" class="item-personal item-personal_favorites">
+									<span class="item-personal__icon">
+										<span class="item-personal__value">2</span>
+									</span>
+									<span class="item-personal__name">Избранное</span>
+								</a>
+							</div>
+							<div class="wrap-personal hidden_mobile">
+								<a href="#" class="item-personal item-personal_cabinet">
+									<span class="item-personal__icon">
+									</span>
+									<span class="item-personal__name">Кабинет</span>
+								</a>
+								<div class="popup-personal">
+									<div class="popup-personal__name">Сергей Иванов</div>
+									<ul class="links-menu">
+										<li><a href="#"><span class="links-menu__icon links-menu__icon_1"></span>Личные данные</a></li>
+										<li><a href="#"><span class="links-menu__icon links-menu__icon_2"></span>Мои заказы</a></li>
+										<li><a href="#"><span class="links-menu__icon links-menu__icon_3"></span>Избранное <strong> (2)</strong></a></li>
+									</ul>
+									<a href="#" class="btn-login"><span class="btn-login__icon"></span>Выйти из аккаунта</a>
+								</div>
+							</div>
+							<div class="wrap-personal">
+								<a href="#" class="item-personal item-personal_basket">
+									<span class="item-personal__icon">
+										<span class="item-personal__value">1</span>
+									</span>
+									<span class="item-personal__name">Корзина</span>
+								</a>
+								<div class="popup-personal">
+									<div class="popup-personal__text">
+										<p>В корзине: <span>2 товара</span></p>
+										<p>На сумму: <span>260 грн.</span></p>
+									</div>
+									<div class="bottom-popup-basket">
+										<a href="#" class="btn-main">Оформить заказ</a>
+										<br>
+										<a href="#" class="link-arrow">Перейти в корзину <i class="far fa-angle-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__bottom">
+				<div class="container">
+					<div class="d_flex">
+						<div class="header-catalog">
+							<div class="header-catalog__btn">Каталог товаров</div>
+							<div class="menu-overflow"></div>
+							<ul class="list-catalog">
+								<li>
+									<div class="list-catalog__link">Аккумуляторы <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown2.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Омыватели стекла</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown3.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Охлаждающие жидкости</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown5.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Герметики и клеи</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown6.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Краски и восстановители цвета</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown7.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Ароматизаторы</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-catalog__link">Шины <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown3.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Охлаждающие жидкости</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown2.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Омыватели стекла</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-catalog__link">Диски <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown2.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Омыватели стекла</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-catalog__link">Щетки стеклоочистителя <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-catalog__link">Автоковрики <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-catalog__link">Масла <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-catalog__link">Технические жидкости <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-catalog__link">Автохимия <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-catalog__link">Автозапчасти <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-catalog__link">Расходные материалы <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-catalog__link">Инструменты и оборудование <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-catalog__link">Охранные системы <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="list-catalog__hidden">
+									<div class="list-catalog__link">Электроника <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="list-catalog__hidden">
+									<div class="list-catalog__link">Электрооборудивание <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="list-catalog__hidden">
+									<div class="list-catalog__link">Видеорегистраторы <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="list-catalog__hidden">
+									<div class="list-catalog__link">Оптика <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="list-catalog__hidden">
+									<div class="list-catalog__link">Багажники и крепления <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="list-catalog__hidden">
+									<div class="list-catalog__link">В салон авто <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="list-catalog__hidden">
+									<div class="list-catalog__link">Туризм <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<ul class="list-nav">
+							<li class="active"><a href="#"><span class="list-nav__icon list-nav__icon_1"></span><span>Горячие скидки</span></a></li>
+							<li><a href="#"><span class="list-nav__icon list-nav__icon_2"></span><span>Автосервис</span></a></li>
+							<li><a href="#">Доставка и оплата </a></li>
+							<li><a href="#">Возврат и обмен</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">О нас</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="card">
+			<div class="container">
+				<ul class="breadcumbs">
+					<li><a href="#">Главная</a> <i class="far fa-angle-right"></i></li>
+					<li><a href="#">Масла</a> <i class="far fa-angle-right"></i></li>
+					<li><a href="#">Моторные</a> <i class="far fa-angle-right"></i></li>
+					<li>Страница товара</li>
+				</ul>
+				<a href="#" class="btn-back"></a>
+				<h1 class="title-section">Моторное масло MOBIL 1 ESP 5W-30 4л</h1>
+				<div class="row row_card">
+					<div class="col-lg-6">
+						<div class="wrap-card">
+							<div class="item-product__code">Код товара: 358297</div>
+							<a href="#" class="item-product__like"></a>
+							<div class="item-product__action">-25%</div>
+							<ul class="item-product__additional">
+								<li><img src="img/ic_adit1.svg" alt="alt"></li>
+								<li><img src="img/ic_adit2.png" alt="alt"></li>
+							</ul>
+							<ul class="slider-for">
+								<li>
+									<div class="slider-for__item">
+										<img src="img/slide_for1.jpg" alt="alt">
+									</div>
+								</li>
+								<li>
+									<div class="slider-for__item">
+										<img src="img/slide_for1.jpg" alt="alt">
+									</div>
+								</li>
+								<li>
+									<div class="slider-for__item">
+										<img src="img/slide_for1.jpg" alt="alt">
+									</div>
+								</li>
+								<li>
+									<div class="slider-for__item">
+										<img src="img/slide_for1.jpg" alt="alt">
+									</div>
+								</li>
+								<li>
+									<div class="slider-for__item">
+										<img src="img/slide_for1.jpg" alt="alt">
+									</div>
+								</li>
+							</ul>
+							<ul class="slider-nav">
+								<li>
+									<div class="slider-nav__item">
+										<img src="img/slide_for1.jpg" alt="alt">
+									</div>
+								</li>
+								<li>
+									<div class="slider-nav__item">
+										<img src="img/slide_for1.jpg" alt="alt">
+									</div>
+								</li>
+								<li>
+									<div class="slider-nav__item">
+										<img src="img/slide_for1.jpg" alt="alt">
+									</div>
+								</li>
+								<li>
+									<div class="slider-nav__item">
+										<img src="img/slide_for1.jpg" alt="alt">
+									</div>
+								</li>
+								<li>
+									<div class="slider-nav__item">
+										<img src="img/slide_for1.jpg" alt="alt">
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="info-card">
+							<div class="info-card__head">
+								<div class="item-product__status item-product__status_available">В наличии</div>
+								<div class="rating-reviews">
+									<div class="star-rating">
+										<fieldset>
+											<input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+											<input type="radio" id="star4" checked="checked" name="rating" value="4" /><label for="star4"></label>
+											<input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+											<input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+											<input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+										</fieldset>
+									</div>
+									<a href="#" class="link-main">Отзывы (12)</a>
+								</div>
+								<div class="item-product__code">Код товара: 358297</div>
+							</div>
+							<div class="info-card__center">
+								<div class="card__prices">
+									<div class="item-product__price item-product__price_new"><span>1000</span> грн.</div>
+									<div class="item-product__price item-product__price_old"><span>1200</span> грн.</div>
+								</div>
+								<div class="card__buttons">
+									<a href="#" class="btn-main">Купить</a>
+									<a href="#modal-order-quick" class="link-text fancybox">Купить в 1 клик <i class="far fa-angle-right"></i></a>
+								</div>
+								<a href="#" class="item-product__like"></a>
+							</div>
+							<div class="info-card__bottom">
+								<div class="row">
+									<div class="col-md-7">
+										<div class="info-card__title">Доставка товара</div>
+										<p>Доставка Нова почта <span>50 грн</span></p>
+										<p>Доставка Деливери <span>50 грн</span></p>
+										<p>Доставка Meest <span>50 грн</span></p>
+										<p>Самовывоз из магазина <span>бесплатно</span> </p>
+									</div>
+									<div class="col-md-5">
+										<div class="info-card__title">Оплата товара</div>
+										<p>Наличными</p>
+										<p>Безналичными</p>
+										<p>VISA/Mastercard</p>
+										<p>Наложенный платеж</p>
+									</div>
+								</div>
+								<div class="info-card__title">Обмен и возврат</div>
+								<p>Обмен и возврат товара осуществляется в течение 14 дней после покупки, согласно закону Украины "О защите прав потребителей Украины"</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row row_card">
+					<div class="col-lg-8">
+						<div class="wrap-tabs">
+							<ul class="tabs">
+								<li class="active"><a href="#tab1">Характеристики</a></li>
+								<li><a href="#tab2">Описание</a></li>
+								<li><a href="#tab3">Отзывы и вопросы</a></li>
+								<li><a href="#tab4">Видео обзоры</a></li>
+							</ul>
+							<div class="tab-container">
+								<div class="tab-pane" id="tab1">
+									<div class="tab-pane__btn">Характеристики <i class="far fa-angle-right"></i></div>
+									<div class="content-tab">
+										<div class="content-tab-mobile">
+											<a href="#" class="btn-back"></a>
+											<h1 class="title-section">Характеристики</h1>
+											<div class="table-wrap">
+												<table>
+													<tbody>
+														<tr>
+															<td>Серия:</td>
+															<td>Super 3000 X1</td>
+														</tr>
+														<tr>
+															<td>Тип:</td>
+															<td>Синтетическое</td>
+														</tr>
+														<tr>
+															<td>Вязкость SAE:</td>
+															<td>5W-40</td>
+														</tr>
+														<tr>
+															<td>Объем:</td>
+															<td>4 л.</td>
+														</tr>
+														<tr>
+															<td>Двигатель:</td>
+															<td>бензиновый, дизельный</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="descr-table"><span>*</span> Характеристики и комплектация товара могут изменяться производителем без уведомления</div>
+											<br>
+											<br>
+											<a href="#" class="btn-transparent btn-transparent_black btn-transparent_tab">Закрыть</a>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="tab2">
+									<div class="tab-pane__btn">Описание <i class="far fa-angle-right"></i></div>
+									<div class="content-tab">
+										<div class="content-tab-mobile">
+											<a href="#" class="btn-back"></a>
+											<h1 class="title-section">Описание</h1>
+											<div class="text-main">
+												<p>Полироль-очиститель Doctor Wax DW8257 позволяет произвести глубокую очистку окрашенных поверхностей от загрязнений, удалить агрессивные вещества, ржавчину и окислы из микротрещин. Освежает и восстанавливает цвет лакокрасочного покрытия. Устраняет незначительные дефекты.</p>
+												<br>
+												<p>Особенности и преимущества DW8257:</p>
+												<p>Обеспечивает высокую адгезию защитного полироля к краске.</p>
+												<p>Применяется для всех типов покрытий.</p>
+												<p>Рекомендуется для краски металлик с лаковым слоем.</p>
+												<p>Самая используемая формула в профессиональных детейл-мастерских для подготовки поверхности под полировку.</p>
+												<br>
+												<p>Применение DW8257:</p>
+												<p>Вымойте автомобиль. Используйте средство на прохладных поверхностях. Энергично встряхните флакон. Проводите обработку участками: половина капота, крыло, дверь и т.д. Мягкой хлопковой тканью или аппликатором круговыми движениями нанесите состав на кузов и дайте ему подсохнуть до образования матового налета.</p>
+												<p>Отполируйте обработанную поверхность мягкой хлопковой тканью до удаления загрязнений и получения равномерного блеска. Может использоваться для ручной и механической обработки.</p>
+											</div>
+											<br>
+											<br>
+											<a href="#" class="btn-transparent btn-transparent_black btn-transparent_tab">Закрыть</a>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="tab3">
+									<div class="tab-pane__btn">Отзывы и вопросы <i class="far fa-angle-right"></i></div>
+									<div class="content-tab">
+										<div class="content-tab-mobile">
+											<a href="#" class="btn-back"></a>
+											<h1 class="title-section">Отзывы и вопросы</h1>
+											<ul class="tabs-inner">
+												<li class="active"><a href="#tab_inner1">Отзывы</a></li>
+												<li><a href="#tab_inner2">Вопросы</a></li>
+											</ul>
+											<div class="tab-container-inner">
+												<div class="tab-pane-inner" id="tab_inner1">
+													<div class="head-review">
+														<a href="#modal-review" class="btn-main fancybox">Оставить отзыв</a>
+													</div>
+													<div class="item-review">
+														<div class="item-review__head">
+															<div class="item-review__name">Дмитрий</div>
+															<div class="item-review__date">Дата: 28.08.20</div>
+															<div class="star-rating">
+																<fieldset>
+																	<input type="radio" id="star5_2" name="rating_2" value="5" /><label for="star5_2"></label>
+																	<input type="radio" id="star4_2" checked="checked" name="rating_2" value="4" /><label for="star4_2"></label>
+																	<input type="radio" id="star3_2" name="rating_2" value="3" /><label for="star3_2"></label>
+																	<input type="radio" id="star2_2" name="rating_2" value="2" /><label for="star2_2"></label>
+																	<input type="radio" id="star1_2" name="rating_2" value="1" /><label for="star1_2"></label>
+																</fieldset>
+															</div>
+														</div>
+														<div class="text-main">
+															<p>Очень редко под руку попадается хороший полироль, постоянно какие-то проблемы аля царапает лак на краске и все в похожем духе. Этим же пользуюсь уже длительное время и никаких нареканий нет. Очень хорошо справился с частичными возникновениями ржавчины по корпусу, сглаживает и закрывает микротрещины, хватает на два месяца использования при использовании раз, два в месяц.</p>
+															<div class="item-review__advantage"><span>Достоинства:</span> цена + качество</div>
+															<div class="item-review__disadvantage"><span>Недостатки:</span> нету</div>
+														</div>
+													</div>
+													<div class="item-review">
+														<div class="item-review__head">
+															<div class="item-review__name">Дмитрий</div>
+															<div class="item-review__date">Дата: 28.08.20</div>
+															<div class="star-rating">
+																<fieldset>
+																	<input type="radio" id="star5_3" name="rating_3" value="5" /><label for="star5_3"></label>
+																	<input type="radio" id="star4_3" checked="checked" name="rating_3" value="4" /><label for="star4_3"></label>
+																	<input type="radio" id="star3_3" name="rating_3" value="3" /><label for="star3_3"></label>
+																	<input type="radio" id="star2_3" name="rating_3" value="2" /><label for="star2_3"></label>
+																	<input type="radio" id="star1_3" name="rating_3" value="1" /><label for="star1_3"></label>
+																</fieldset>
+															</div>
+														</div>
+														<div class="text-main">
+															<p>Очень редко под руку попадается хороший полироль, постоянно какие-то проблемы аля царапает лак на краске и все в похожем духе. Этим же пользуюсь уже длительное время и никаких нареканий нет. Очень хорошо справился с частичными возникновениями ржавчины по корпусу, сглаживает и закрывает микротрещины, хватает на два месяца использования при использовании раз, два в месяц.</p>
+															<div class="item-review__advantage"><span>Достоинства:</span> цена + качество</div>
+															<div class="item-review__disadvantage"><span>Недостатки:</span> нету</div>
+														</div>
+													</div>
+													<div class="item-review">
+														<div class="item-review__head">
+															<div class="item-review__name">Дмитрий</div>
+															<div class="item-review__date">Дата: 28.08.20</div>
+															<div class="star-rating">
+																<fieldset>
+																	<input type="radio" id="star5_4" name="rating_4" value="5" /><label for="star5_4"></label>
+																	<input type="radio" id="star4_4" checked="checked" name="rating_4" value="4" /><label for="star4_4"></label>
+																	<input type="radio" id="star3_4" name="rating_4" value="3" /><label for="star3_4"></label>
+																	<input type="radio" id="star2_4" name="rating_4" value="2" /><label for="star2_4"></label>
+																	<input type="radio" id="star1_4" name="rating_4" value="1" /><label for="star1_4"></label>
+																</fieldset>
+															</div>
+														</div>
+														<div class="text-main">
+															<p>Очень редко под руку попадается хороший полироль, постоянно какие-то проблемы аля царапает лак на краске и все в похожем духе. Этим же пользуюсь уже длительное время и никаких нареканий нет. Очень хорошо справился с частичными возникновениями ржавчины по корпусу, сглаживает и закрывает микротрещины, хватает на два месяца использования при использовании раз, два в месяц.</p>
+															<div class="item-review__advantage"><span>Достоинства:</span> цена + качество</div>
+															<div class="item-review__disadvantage"><span>Недостатки:</span> нету</div>
+														</div>
+													</div>
+													<div class="bottom-catalog">
+														<a href="#" class="btn-transparent btn-transparent_black">Загрузить еще Отзывы</a>
+														<div class="pagination">
+															<ul>
+																<li><a href="#"><i class="far fa-angle-left"></i></a></li>
+																<li class="active"><a href="#">1</a></li>
+																<li><a href="#">2</a></li>
+																<li><a href="#">3</a></li>
+																<li class="hidden_desktop"><a href="#">...</a></li>
+																<li class="hidden_desktop"><a href="#">9</a></li>
+																<li class="hidden_desktop"><a href="#">10</a></li>
+																<li><a href="#"><i class="far fa-angle-right"></i></a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="tab-pane-inner" id="tab_inner2">
+													<div class="head-review">
+														<a href="#modal-question" class="btn-main fancybox">Задать вопрос</a>
+													</div>
+													<div class="item-review">
+														<div class="item-review__head">
+															<div class="item-review__name">Дмитрий</div>
+															<div class="item-review__date">Дата: 28.08.20</div>
+														</div>
+														<div class="text-main">
+															<p>Очень редко под руку попадается хороший полироль, постоянно какие-то проблемы аля царапает лак на краске и все в похожем духе. Этим же пользуюсь уже длительное время и никаких нареканий нет. Очень хорошо справился с частичными возникновениями ржавчины по корпусу, сглаживает и закрывает микротрещины, хватает на два месяца использования при использовании раз, два в месяц.</p>
+														</div>
+														<div class="answer-review">
+															<div class="item-review__head">
+																<div class="item-review__name">Консультант FIRSTGEAR</div>
+																<div class="item-review__date">Дата ответа: 28.08.20</div>
+															</div>
+															<div class="text-main">
+																<p>Очень редко под руку попадается хороший полироль, постоянно какие-то проблемы аля царапает лак на краске и все в похожем духе. Этим же пользуюсь уже длительное время и никаких нареканий нет.</p>
+															</div>
+														</div>
+													</div>
+													<div class="item-review">
+														<div class="item-review__head">
+															<div class="item-review__name">Дмитрий</div>
+															<div class="item-review__date">Дата: 28.08.20</div>
+														</div>
+														<div class="text-main">
+															<p>Очень редко под руку попадается хороший полироль, постоянно какие-то проблемы аля царапает лак на краске и все в похожем духе. Этим же пользуюсь уже длительное время и никаких нареканий нет. Очень хорошо справился с частичными возникновениями ржавчины по корпусу, сглаживает и закрывает микротрещины, хватает на два месяца использования при использовании раз, два в месяц.</p>
+														</div>
+													</div>
+													<div class="item-review">
+														<div class="item-review__head">
+															<div class="item-review__name">Дмитрий</div>
+															<div class="item-review__date">Дата: 28.08.20</div>
+														</div>
+														<div class="text-main">
+															<p>Очень редко под руку попадается хороший полироль, постоянно какие-то проблемы аля царапает лак на краске и все в похожем духе. Этим же пользуюсь уже длительное время и никаких нареканий нет. Очень хорошо справился с частичными возникновениями ржавчины по корпусу, сглаживает и закрывает микротрещины, хватает на два месяца использования при использовании раз, два в месяц.</p>
+														</div>
+														<div class="answer-review">
+															<div class="item-review__head">
+																<div class="item-review__name">Консультант FIRSTGEAR</div>
+																<div class="item-review__date">Дата ответа: 28.08.20</div>
+															</div>
+															<div class="text-main">
+																<p>Очень редко под руку попадается хороший полироль, постоянно какие-то проблемы аля царапает лак на краске и все в похожем духе. Этим же пользуюсь уже длительное время и никаких нареканий нет.</p>
+															</div>
+														</div>
+													</div>
+													<div class="bottom-catalog">
+														<a href="#" class="btn-transparent btn-transparent_black">Загрузить еще Вопросы</a>
+														<div class="pagination">
+															<ul>
+																<li><a href="#"><i class="far fa-angle-left"></i></a></li>
+																<li class="active"><a href="#">1</a></li>
+																<li><a href="#">2</a></li>
+																<li><a href="#">3</a></li>
+																<li class="hidden_desktop"><a href="#">...</a></li>
+																<li class="hidden_desktop"><a href="#">9</a></li>
+																<li class="hidden_desktop"><a href="#">10</a></li>
+																<li><a href="#"><i class="far fa-angle-right"></i></a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+											<br>
+											<br>
+											<a href="#" class="btn-transparent btn-transparent_black btn-transparent_tab">Закрыть</a>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="tab4">
+									<div class="tab-pane__btn">Видео обзоры <i class="far fa-angle-right"></i></div>
+									<div class="content-tab">
+										<div class="content-tab-mobile">
+											<a href="#" class="btn-back"></a>
+											<h1 class="title-section">Видео обзоры</h1>
+											<iframe width="560" height="315" src="https://www.youtube.com/embed/WmVLcj-XKnM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											<br>
+											<br>
+											<a href="#" class="btn-transparent btn-transparent_black btn-transparent_tab">Закрыть</a>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="card-complect">
+							<div class="card-complect__title">Вместе дешевле</div>
+							<div class="row">
+								<div class="col-md-6">
+									<a href="#" class="item-complect">
+										<span class="item-complect__image">
+											<img src="img/item_complect1.jpg" alt="alt">
+										</span>
+										<span class="item-complect__name">Моторное масло MOBIL 1 ESP 5W-30 4л</span>
+										<span class="item-product__price"><span>1000</span> грн.</span>
+									</a>
+								</div>
+								<div class="col-md-6">
+									<a href="#" class="item-complect">
+										<span class="item-complect__image">
+											<img src="img/item_complect2.jpg" alt="alt">
+										</span>
+										<span class="item-complect__name">Масло моторное Helix Ultra ECT C3 5W-30 4л</span>
+										<span class="item-product__price item-product__price_new"><span>800</span> грн.</span>
+										<span class="item-product__price item-product__price_old"><span>1400</span> грн.</span>
+									</a>
+								</div>
+							</div>
+							<div class="card-complect__bottom">
+								<div class="card__prices">
+									<span class="item-product__price item-product__price_new"><span>1800</span> грн.</span>
+									<span class="item-product__price item-product__price_old"><span>2400</span> грн.</span>
+								</div>
+								<a href="#" class="btn-main">Купить Комплект</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section-products section-products_page section-products_oil">
+			<div class="container">
+				<div class="title-section title-section_page">С этим товаром также покупают</div>
+				<ul class="slider-products arrows_right">
+					<li>
+						<div class="item-product">
+							<a href="#" class="item-product__like"></a>
+							<ul class="item-product__additional">
+								<li><img src="img/ic_adit1.svg" alt="alt"></li>
+								<li><img src="img/ic_adit2.png" alt="alt"></li>
+							</ul>
+							<div class="item-product__code">Код товара: 358297</div>
+							<div class="item-product__image">
+								<img src="img/product1_1.png" alt="alt">
+							</div>
+							<div class="item-product__brand">MOBIL</div>
+							<a href="#" class="item-product__name">Моторное масло MOBIL 1 ESP 5W-30 4л</a>
+							<div class="item-product__bottom">
+								<div class="item-product__left">
+									<div class="item-product__price"><span>1000</span> грн.</div>
+									<div class="item-product__status">В наличии</div>
+								</div>
+								<a href="#" class="btn-basket"></a>
+							</div>
+							<div class="item-product__info">
+								<p><span>страна производитель:</span> Финляндия</p>
+								<p><span>двигатель:</span> для бензинового и дизельного двигателя</p>
+								<p><span>вязкость:</span> 5W-40</p>
+								<p><span>состав:</span> Синтетические</p>
+								<p><span>вид тары:</span> Канистра</p>
+								<p><span>емкость тары:</span> 4л</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-product">
+							<a href="#" class="item-product__like"></a>
+							<ul class="item-product__additional">
+
+							</ul>
+							<div class="item-product__code">Код товара: 358297</div>
+							<div class="item-product__image">
+								<img src="img/product1_2.png" alt="alt">
+							</div>
+							<div class="item-product__brand">Doctor Wax</div>
+							<a href="#" class="item-product__name">Масло моторное DIESEL LEICHTLAUF 10W-40 5 Л 8034</a>
+							<div class="item-product__bottom">
+								<div class="item-product__left">
+									<div class="item-product__price"><span>1200</span> грн.</div>
+									<div class="item-product__status item-product__status_out">Заканчивается</div>
+								</div>
+								<a href="#" class="btn-basket"></a>
+							</div>
+							<div class="item-product__info">
+								<p><span>страна производитель:</span> Финляндия</p>
+								<p><span>двигатель:</span> для бензинового и дизельного двигателя</p>
+								<p><span>вязкость:</span> 5W-40</p>
+								<p><span>состав:</span> Синтетические</p>
+								<p><span>вид тары:</span> Канистра</p>
+								<p><span>емкость тары:</span> 4л</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-product">
+							<a href="#" class="item-product__like"></a>
+							<ul class="item-product__additional">
+								<li><img src="img/ic_adit1.svg" alt="alt"></li>
+								<li><img src="img/ic_adit2.png" alt="alt"></li>
+							</ul>
+							<div class="item-product__action">-25%</div>
+							<div class="item-product__code">Код товара: 358297</div>
+							<div class="item-product__image">
+								<img src="img/product1_3.png" alt="alt">
+							</div>
+							<div class="item-product__brand">MOBIL</div>
+							<a href="#" class="item-product__name">Моторное масло MOBIL 1 ESP 5W-30 4л</a>
+							<div class="item-product__bottom">
+								<div class="item-product__left">
+									<div class="item-product__price item-product__price_new"><span>800</span> грн.</div>
+									<div class="item-product__price item-product__price_old"><span>960</span> грн.</div>
+									<div class="item-product__status">В наличии</div>
+								</div>
+								<a href="#" class="btn-basket"></a>
+							</div>
+							<div class="item-product__info">
+								<p><span>страна производитель:</span> Финляндия</p>
+								<p><span>двигатель:</span> для бензинового и дизельного двигателя</p>
+								<p><span>вязкость:</span> 5W-40</p>
+								<p><span>состав:</span> Синтетические</p>
+								<p><span>вид тары:</span> Канистра</p>
+								<p><span>емкость тары:</span> 4л</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-product">
+							<a href="#" class="item-product__like"></a>
+							<ul class="item-product__additional">
+
+							</ul>
+							<div class="item-product__code">Код товара: 358297</div>
+							<div class="item-product__image">
+								<img src="img/product1_4.png" alt="alt">
+							</div>
+							<div class="item-product__brand">Doctor Wax</div>
+							<a href="#" class="item-product__name">Масло моторное DIESEL LEICHTLAUF 10W-40 5 Л 8034</a>
+							<div class="item-product__bottom">
+								<div class="item-product__left">
+									<div class="item-product__price"><span>1200</span> грн.</div>
+									<div class="item-product__status item-product__status_out">Заканчивается</div>
+								</div>
+								<a href="#" class="btn-basket"></a>
+							</div>
+							<div class="item-product__info">
+								<p><span>страна производитель:</span> Финляндия</p>
+								<p><span>двигатель:</span> для бензинового и дизельного двигателя</p>
+								<p><span>вязкость:</span> 5W-40</p>
+								<p><span>состав:</span> Синтетические</p>
+								<p><span>вид тары:</span> Канистра</p>
+								<p><span>емкость тары:</span> 4л</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-product">
+							<a href="#" class="item-product__like"></a>
+							<ul class="item-product__additional">
+								<li><img src="img/ic_adit1.svg" alt="alt"></li>
+								<li><img src="img/ic_adit2.png" alt="alt"></li>
+							</ul>
+							<div class="item-product__code">Код товара: 358297</div>
+							<div class="item-product__image">
+								<img src="img/product1_5.png" alt="alt">
+							</div>
+							<div class="item-product__brand">MOBIL</div>
+							<a href="#" class="item-product__name">Моторное масло MOBIL 1 ESP 5W-30 4л</a>
+							<div class="item-product__bottom">
+								<div class="item-product__left">
+									<div class="item-product__price"><span>1000</span> грн.</div>
+									<div class="item-product__status">В наличии</div>
+								</div>
+								<a href="#" class="btn-basket"></a>
+							</div>
+							<div class="item-product__info">
+								<p><span>страна производитель:</span> Финляндия</p>
+								<p><span>двигатель:</span> для бензинового и дизельного двигателя</p>
+								<p><span>вязкость:</span> 5W-40</p>
+								<p><span>состав:</span> Синтетические</p>
+								<p><span>вид тары:</span> Канистра</p>
+								<p><span>емкость тары:</span> 4л</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-product">
+							<a href="#" class="item-product__like"></a>
+							<ul class="item-product__additional">
+								<li><img src="img/ic_adit1.svg" alt="alt"></li>
+								<li><img src="img/ic_adit2.png" alt="alt"></li>
+							</ul>
+							<div class="item-product__code">Код товара: 358297</div>
+							<div class="item-product__image">
+								<img src="img/product1_1.png" alt="alt">
+							</div>
+							<div class="item-product__brand">MOBIL</div>
+							<a href="#" class="item-product__name">Моторное масло MOBIL 1 ESP 5W-30 4л</a>
+							<div class="item-product__bottom">
+								<div class="item-product__left">
+									<div class="item-product__price"><span>1000</span> грн.</div>
+									<div class="item-product__status">В наличии</div>
+								</div>
+								<a href="#" class="btn-basket"></a>
+							</div>
+							<div class="item-product__info">
+								<p><span>страна производитель:</span> Финляндия</p>
+								<p><span>двигатель:</span> для бензинового и дизельного двигателя</p>
+								<p><span>вязкость:</span> 5W-40</p>
+								<p><span>состав:</span> Синтетические</p>
+								<p><span>вид тары:</span> Канистра</p>
+								<p><span>емкость тары:</span> 4л</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-product">
+							<a href="#" class="item-product__like"></a>
+							<ul class="item-product__additional">
+
+							</ul>
+							<div class="item-product__code">Код товара: 358297</div>
+							<div class="item-product__image">
+								<img src="img/product1_2.png" alt="alt">
+							</div>
+							<div class="item-product__brand">Doctor Wax</div>
+							<a href="#" class="item-product__name">Масло моторное DIESEL LEICHTLAUF 10W-40 5 Л 8034</a>
+							<div class="item-product__bottom">
+								<div class="item-product__left">
+									<div class="item-product__price"><span>1200</span> грн.</div>
+									<div class="item-product__status item-product__status_out">Заканчивается</div>
+								</div>
+								<a href="#" class="btn-basket"></a>
+							</div>
+							<div class="item-product__info">
+								<p><span>страна производитель:</span> Финляндия</p>
+								<p><span>двигатель:</span> для бензинового и дизельного двигателя</p>
+								<p><span>вязкость:</span> 5W-40</p>
+								<p><span>состав:</span> Синтетические</p>
+								<p><span>вид тары:</span> Канистра</p>
+								<p><span>емкость тары:</span> 4л</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-product">
+							<a href="#" class="item-product__like"></a>
+							<ul class="item-product__additional">
+								<li><img src="img/ic_adit1.svg" alt="alt"></li>
+								<li><img src="img/ic_adit2.png" alt="alt"></li>
+							</ul>
+							<div class="item-product__action">-25%</div>
+							<div class="item-product__code">Код товара: 358297</div>
+							<div class="item-product__image">
+								<img src="img/product1_3.png" alt="alt">
+							</div>
+							<div class="item-product__brand">MOBIL</div>
+							<a href="#" class="item-product__name">Моторное масло MOBIL 1 ESP 5W-30 4л</a>
+							<div class="item-product__bottom">
+								<div class="item-product__left">
+									<div class="item-product__price item-product__price_new"><span>800</span> грн.</div>
+									<div class="item-product__price item-product__price_old"><span>960</span> грн.</div>
+									<div class="item-product__status">В наличии</div>
+								</div>
+								<a href="#" class="btn-basket"></a>
+							</div>
+							<div class="item-product__info">
+								<p><span>страна производитель:</span> Финляндия</p>
+								<p><span>двигатель:</span> для бензинового и дизельного двигателя</p>
+								<p><span>вязкость:</span> 5W-40</p>
+								<p><span>состав:</span> Синтетические</p>
+								<p><span>вид тары:</span> Канистра</p>
+								<p><span>емкость тары:</span> 4л</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="section-products section-products_page">
+			<div class="container">
+				<div class="title-section title-section_page">Популярные товары</div>
+				<ul class="slider-products arrows_right">
+					<li>
+						<div class="item-product">
+							<a href="#" class="item-product__like"></a>
+							<ul class="item-product__additional">
+								<li><img src="img/ic_adit1.svg" alt="alt"></li>
+								<li><img src="img/ic_adit2.png" alt="alt"></li>
+							</ul>
+							<div class="item-product__code">Код товара: 358297</div>
+							<div class="item-product__image">
+								<img src="img/product1.png" alt="alt">
+							</div>
+							<div class="item-product__brand">Vatoil</div>
+							<a href="#" class="item-product__name">Тормозная жидкость Vatoil DOT 4 1л (50117)</a>
+							<div class="item-product__bottom">
+								<div class="item-product__left">
+									<div class="item-product__price"><span>180</span> грн.</div>
+									<div class="item-product__status">В наличии</div>
+								</div>
+								<a href="#" class="btn-basket"></a>
+							</div>
+							<div class="item-product__info">
+								<p><span>страна производитель:</span> Финляндия</p>
+								<p><span>двигатель:</span> для бензинового и дизельного двигателя</p>
+								<p><span>вязкость:</span> 5W-40</p>
+								<p><span>состав:</span> Синтетические</p>
+								<p><span>вид тары:</span> Канистра</p>
+								<p><span>емкость тары:</span> 4л</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-product">
+							<a href="#" class="item-product__like"></a>
+							<ul class="item-product__additional">
+
+							</ul>
+							<div class="item-product__code">Код товара: 358297</div>
+							<div class="item-product__image">
+								<img src="img/product2.png" alt="alt">
+							</div>
+							<div class="item-product__brand">A-MEGA</div>
+							<a href="#" class="item-product__name">Аккумулятор A-MEGA 6СТ-60 АЗ (1) Standard</a>
+							<div class="item-product__bottom">
+								<div class="item-product__left">
+									<div class="item-product__price"><span>1200</span> грн.</div>
+									<div class="item-product__status item-product__status_out">Заканчивается</div>
+								</div>
+								<a href="#" class="btn-basket"></a>
+							</div>
+							<div class="item-product__info">
+								<p><span>страна производитель:</span> Финляндия</p>
+								<p><span>двигатель:</span> для бензинового и дизельного двигателя</p>
+								<p><span>вязкость:</span> 5W-40</p>
+								<p><span>состав:</span> Синтетические</p>
+								<p><span>вид тары:</span> Канистра</p>
+								<p><span>емкость тары:</span> 4л</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-product">
+							<a href="#" class="item-product__like"></a>
+							<ul class="item-product__additional">
+								<li><img src="img/ic_adit1.svg" alt="alt"></li>
+								<li><img src="img/ic_adit2.png" alt="alt"></li>
+							</ul>
+							<div class="item-product__code">Код товара: 358297</div>
+							<div class="item-product__image">
+								<img src="img/product3.png" alt="alt">
+							</div>
+							<div class="item-product__brand">SAKURA</div>
+							<a href="#" class="item-product__name">Диск SAKURA 6,5х15 5/105 ET35 DIA 56.6 алмаз</a>
+							<div class="item-product__bottom">
+								<div class="item-product__left">
+									<div class="item-product__price"><span>1000</span> грн.</div>
+									<div class="item-product__status">В наличии</div>
+								</div>
+								<a href="#" class="btn-basket"></a>
+							</div>
+							<div class="item-product__info">
+								<p><span>страна производитель:</span> Финляндия</p>
+								<p><span>двигатель:</span> для бензинового и дизельного двигателя</p>
+								<p><span>вязкость:</span> 5W-40</p>
+								<p><span>состав:</span> Синтетические</p>
+								<p><span>вид тары:</span> Канистра</p>
+								<p><span>емкость тары:</span> 4л</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-product">
+							<a href="#" class="item-product__like"></a>
+							<ul class="item-product__additional">
+								<li><img src="img/ic_adit1.svg" alt="alt"></li>
+								<li><img src="img/ic_adit2.png" alt="alt"></li>
+							</ul>
+							<div class="item-product__action">-25%</div>
+							<div class="item-product__code">Код товара: 358297</div>
+							<div class="item-product__image">
+								<img src="img/product4.png" alt="alt">
+							</div>
+							<div class="item-product__brand">MOTUL</div>
+							<a href="#" class="item-product__name">MOTUL Dexron IID 2л (325902)</a>
+							<div class="item-product__bottom">
+								<div class="item-product__left">
+									<div class="item-product__price item-product__price_new"><span>450</span> грн.</div>
+									<div class="item-product__price item-product__price_old"><span>500</span> грн.</div>
+									<div class="item-product__status">В наличии</div>
+								</div>
+								<a href="#" class="btn-basket"></a>
+							</div>
+							<div class="item-product__info">
+								<p><span>страна производитель:</span> Финляндия</p>
+								<p><span>двигатель:</span> для бензинового и дизельного двигателя</p>
+								<p><span>вязкость:</span> 5W-40</p>
+								<p><span>состав:</span> Синтетические</p>
+								<p><span>вид тары:</span> Канистра</p>
+								<p><span>емкость тары:</span> 4л</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-product">
+							<a href="#" class="item-product__like"></a>
+							<ul class="item-product__additional">
+								<li><img src="img/ic_adit1.svg" alt="alt"></li>
+								<li><img src="img/ic_adit2.png" alt="alt"></li>
+							</ul>
+							<div class="item-product__code">Код товара: 358297</div>
+							<div class="item-product__image">
+								<img src="img/product5.png" alt="alt">
+							</div>
+							<div class="item-product__brand">Globex</div>
+							<a href="#" class="item-product__name">Видеорегистратор Globex GE-112</a>
+							<div class="item-product__bottom">
+								<div class="item-product__left">
+									<div class="item-product__price"><span>800</span> грн.</div>
+									<div class="item-product__status">В наличии</div>
+								</div>
+								<a href="#" class="btn-basket"></a>
+							</div>
+							<div class="item-product__info">
+								<p><span>страна производитель:</span> Финляндия</p>
+								<p><span>двигатель:</span> для бензинового и дизельного двигателя</p>
+								<p><span>вязкость:</span> 5W-40</p>
+								<p><span>состав:</span> Синтетические</p>
+								<p><span>вид тары:</span> Канистра</p>
+								<p><span>емкость тары:</span> 4л</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-product">
+							<a href="#" class="item-product__like"></a>
+							<ul class="item-product__additional">
+								<li><img src="img/ic_adit1.svg" alt="alt"></li>
+								<li><img src="img/ic_adit2.png" alt="alt"></li>
+							</ul>
+							<div class="item-product__code">Код товара: 358297</div>
+							<div class="item-product__image">
+								<img src="img/product1.png" alt="alt">
+							</div>
+							<div class="item-product__brand">Vatoil</div>
+							<a href="#" class="item-product__name">Тормозная жидкость Vatoil DOT 4 1л (50117)</a>
+							<div class="item-product__bottom">
+								<div class="item-product__left">
+									<div class="item-product__price"><span>180</span> грн.</div>
+									<div class="item-product__status">В наличии</div>
+								</div>
+								<a href="#" class="btn-basket"></a>
+							</div>
+							<div class="item-product__info">
+								<p><span>страна производитель:</span> Финляндия</p>
+								<p><span>двигатель:</span> для бензинового и дизельного двигателя</p>
+								<p><span>вязкость:</span> 5W-40</p>
+								<p><span>состав:</span> Синтетические</p>
+								<p><span>вид тары:</span> Канистра</p>
+								<p><span>емкость тары:</span> 4л</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-product">
+							<a href="#" class="item-product__like"></a>
+							<ul class="item-product__additional">
+								<li><img src="img/ic_adit1.svg" alt="alt"></li>
+								<li><img src="img/ic_adit2.png" alt="alt"></li>
+							</ul>
+							<div class="item-product__code">Код товара: 358297</div>
+							<div class="item-product__image">
+								<img src="img/product3.png" alt="alt">
+							</div>
+							<div class="item-product__brand">SAKURA</div>
+							<a href="#" class="item-product__name">Диск SAKURA 6,5х15 5/105 ET35 DIA 56.6 алмаз</a>
+							<div class="item-product__bottom">
+								<div class="item-product__left">
+									<div class="item-product__price"><span>1000</span> грн.</div>
+									<div class="item-product__status">В наличии</div>
+								</div>
+								<a href="#" class="btn-basket"></a>
+							</div>
+							<div class="item-product__info">
+								<p><span>страна производитель:</span> Финляндия</p>
+								<p><span>двигатель:</span> для бензинового и дизельного двигателя</p>
+								<p><span>вязкость:</span> 5W-40</p>
+								<p><span>состав:</span> Синтетические</p>
+								<p><span>вид тары:</span> Канистра</p>
+								<p><span>емкость тары:</span> 4л</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-product">
+							<a href="#" class="item-product__like"></a>
+							<ul class="item-product__additional">
+								<li><img src="img/ic_adit1.svg" alt="alt"></li>
+								<li><img src="img/ic_adit2.png" alt="alt"></li>
+							</ul>
+							<div class="item-product__action">-25%</div>
+							<div class="item-product__code">Код товара: 358297</div>
+							<div class="item-product__image">
+								<img src="img/product4.png" alt="alt">
+							</div>
+							<div class="item-product__brand">MOTUL</div>
+							<a href="#" class="item-product__name">MOTUL Dexron IID 2л (325902)</a>
+							<div class="item-product__bottom">
+								<div class="item-product__left">
+									<div class="item-product__price item-product__price_new"><span>450</span> грн.</div>
+									<div class="item-product__price item-product__price_old"><span>500</span> грн.</div>
+									<div class="item-product__status">В наличии</div>
+								</div>
+								<a href="#" class="btn-basket"></a>
+							</div>
+							<div class="item-product__info">
+								<p><span>страна производитель:</span> Финляндия</p>
+								<p><span>двигатель:</span> для бензинового и дизельного двигателя</p>
+								<p><span>вязкость:</span> 5W-40</p>
+								<p><span>состав:</span> Синтетические</p>
+								<p><span>вид тары:</span> Канистра</p>
+								<p><span>емкость тары:</span> 4л</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 hidden_mobile">
+						<div class="footer__title">Каталог</div>
+						<ul class="list-footer">
+							<li><a href="#">Аккумуляторы</a></li>
+							<li><a href="#">Диски</a></li>
+							<li><a href="#">Шины</a></li>
+							<li><a href="#">Щетки стеклоочистителя</a></li>
+							<li><a href="#">Автоковрики</a></li>
+							<li><a href="#">Масла</a></li>
+							<li><a href="#">Технические жидкости</a></li>
+							<li><a href="#">Автохимия</a></li>
+							<li><a href="#">Автозапчасти</a></li>
+							<li><a href="#">Расходные материалы</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 hidden_mobile">
+						<div class="footer__title"></div>
+						<ul class="list-footer">
+							<li><a href="#">Инструменты и оборудование</a></li>
+							<li><a href="#">Электроника</a></li>
+							<li><a href="#">Электрооборудование</a></li>
+							<li><a href="#">Видеорегистраторы</a></li>
+							<li><a href="#">Оптика</a></li>
+							<li><a href="#">Туризм</a></li>
+							<li><a href="#">Багажники и крепления</a></li>
+							<li><a href="#">В багажник</a></li>
+							<li><a href="#">В салон авто</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 hidden_mobile">
+						<div class="footer__title">Покупателям</div>
+						<ul class="list-footer">
+							<li><a href="#">Акции и новинки</a></li>
+							<li><a href="#">Автосервис</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">Возврат и обмен</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">О нас</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 hidden_mobile">
+						<div class="footer__title">Наши контакты</div>
+						<ul class="list-phones">
+							<li><a href="tel:0981234567" class="footer__phone">098 123 45 67</a></li>
+							<li><a href="tel:0981234567" class="footer__phone">098 123 45 67</a></li>
+							<li><a href="tel:0981234567" class="footer__phone">098 123 45 67</a></li>
+						</ul>
+						<a href="mailto:firstgera_info@gmail.com" class="footer__mail">firstgera_info@gmail.com</a>
+						<ul class="social-footer">
+							<li><a href="#"><img src="img/social1.svg" alt="alt"></a></li>
+							<li><a href="#"><img src="img/social2.svg" alt="alt"></a></li>
+							<li><a href="#"><img src="img/social3.svg" alt="alt"></a></li>
+							<li><a href="#"><img src="img/social4.svg" alt="alt"></a></li>
+							<li><a href="#"><img src="img/social5.svg" alt="alt"></a></li>
+						</ul>
+						<a href="#callback" class="btn-transparent fancybox">Обратный звонок</a>
+					</div>
+				</div>
+				<div class="show_mobile">
+					<ul class="list-mobile-footer">
+						<li><a href="#">Доставка и оплата <i class="far fa-angle-right"></i></a></li>
+						<li><a href="#">Возврат и обмен <i class="far fa-angle-right"></i></a></li>
+						<li><a href="#">О нас <i class="far fa-angle-right"></i></a></li>
+						<li><a href="#">Контакты <i class="far fa-angle-right"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-md-7">
+							<div class="show_mobile">
+								<ul class="social-footer">
+									<li><a href="#"><img src="img/social1.svg" alt="alt"></a></li>
+									<li><a href="#"><img src="img/social2.svg" alt="alt"></a></li>
+									<li><a href="#"><img src="img/social3.svg" alt="alt"></a></li>
+									<li><a href="#"><img src="img/social4.svg" alt="alt"></a></li>
+									<li><a href="#"><img src="img/social5.svg" alt="alt"></a></li>
+								</ul>
+							</div>
+							<div class="footer__left">
+								<a href="#" class="logo hidden_mobile">
+									<img src="img/logo2.svg" alt="alt">
+								</a>
+								<div class="copyright">© FIRSTGEAR автомагазин 2020</div>
+							</div>
+						</div>
+						<div class="col-md-5 hidden_mobile">
+							<div class="footer__right">
+								<p>Разработано совместно с</p>
+								<img src="img/create.svg" alt="alt">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<div class="overlay-mobile"></div>	
+
+	<div id="callback" class="modal-block">
+		<div class="modal-wrap">
+			<div class="modal-block__title">Обратный звонок</div>
+			<div class="modal-block__descr">Нужна помощь при выборе товара? Менеджер свяжется с вами в течение 3 минут и поможет.</div>
+			<form>
+				<div class="item-form">
+					<input type="text" required="required" class="rfield">
+					<div class="item-form__descr">Ваше имя</div>
+				</div>
+				<div class="item-form">
+					<input type="text" required="required" class="rfield input-phone">
+					<div class="item-form__descr">Ваш телефон</div>
+				</div>
+				<button class="btn-main">Отправить</button>
+			</form>
+		</div>
+	</div>
+
+	<div id="modal-review" class="modal-block">
+		<div class="modal-wrap modal-wrap-review">
+			<div class="modal-block__title">Отзыв</div>
+			<form>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="item-form">
+							<input type="text" required="required" class="rfield">
+							<div class="item-form__descr">Ваше имя</div>
+						</div>
+						<div class="item-form">
+							<input type="text" required="required" class="rfield">
+							<div class="item-form__descr">Ваша почта</div>
+						</div>
+						<div class="item-form hidden_desktop">
+							<textarea placeholder="Комментарий к заказу" class="rfield active">Поле для текстового сообщения</textarea>
+							<div class="item-form__descr">Комментарий к заказу</div>
+						</div>
+						<div class="item-form">
+							<input type="text" required="required" class="rfield">
+							<div class="item-form__descr">Достоинства</div>
+						</div>
+						<div class="item-form">
+							<input type="text" required="required" class="rfield">
+							<div class="item-form__descr">Недостатки</div>
+						</div>
+					</div>
+					<div class="col-md-6 hidden_table">
+						<div class="item-form">
+							<textarea placeholder="Комментарий к заказу" class="rfield active">Поле для текстового сообщения</textarea>
+							<div class="item-form__descr">Комментарий к заказу</div>
+						</div>
+					</div>
+				</div>
+				<div class="add-rating">
+					<p>Ваша оценка:</p>
+					<div class="star-rating">
+						<fieldset>
+							<input type="radio" id="star5_5" name="rating_5" value="5" /><label for="star5_5"></label>
+							<input type="radio" id="star4_5" checked="checked" name="rating_5" value="4" /><label for="star4_5"></label>
+							<input type="radio" id="star3_5" name="rating_5" value="3" /><label for="star3_5"></label>
+							<input type="radio" id="star2_5" name="rating_5" value="2" /><label for="star2_5"></label>
+							<input type="radio" id="star1_5" name="rating_5" value="1" /><label for="star1_5"></label>
+						</fieldset>
+					</div>
+				</div>
+				<button class="btn-main">Оставить отзыв</button>
+			</form>
+			<div class="form-bottom-descr">Регистрируясь, вы соглашаетесь с пользовательским соглашением</div>
+		</div>
+	</div>
+
+	<div id="modal-question" class="modal-block">
+		<div class="modal-wrap modal-wrap-review">
+			<div class="modal-block__title">Вопрос</div>
+			<form>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="item-form">
+							<input type="text" required="required" class="rfield">
+							<div class="item-form__descr">Ваше имя</div>
+						</div>
+						<div class="item-form">
+							<input type="text" required="required" class="rfield">
+							<div class="item-form__descr">Ваша почта</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="item-form">
+							<textarea placeholder="Комментарий к заказу" class="rfield active">Поле для текстового сообщения</textarea>
+							<div class="item-form__descr">Комментарий к заказу</div>
+						</div>
+					</div>
+				</div>
+				<button class="btn-main">Оставить вопрос</button>
+			</form>
+			<div class="form-bottom-descr">Регистрируясь, вы соглашаетесь с пользовательским соглашением</div>
+		</div>
+	</div>
+
+	<div id="modal-order-quick" class="modal-block">
+		<div class="modal-wrap modal-wrap_page">
+			<div class="modal-block__title">Быстрый заказ</div>
+			<form>
+				<div class="item-form">
+					<input type="text" required="required" class="rfield">
+					<div class="item-form__descr">Ваше имя</div>
+				</div>
+				<div class="item-form">
+					<input type="text" required="required" class="rfield input-phone">
+					<div class="item-form__descr">Ваш телефон</div>
+				</div>
+				<button class="btn-main">Отправить</button>
+				<div class="form-bottom-descr">Регистрируясь, вы соглашаетесь с пользовательским соглашением</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="thanks-callback" class="modal-block">
+		<div class="modal-wrap">
+			<div class="success-send"><div class="success-send__icon"></div>Спасибо за заказ. Наш менеджер свяжется с вами в течение 5 минут, чтобы уточнить что вы хочете.</div>
+		</div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+<![endif]--> 
+<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+<script src="libs/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
+<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+<script src="libs/mask/jquery.maskedinput.js"></script>
+<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+<script src="js/common.js?ver=1.12"></script>
+<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
