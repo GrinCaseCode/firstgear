@@ -1,5 +1,36 @@
 $(document).ready(function() {
 
+    jQuery('.quantity').each(function() {
+      var spinner = jQuery(this),
+        input = spinner.find('input[type="number"]'),
+        btnUp = spinner.find('.quantity-up'),
+        btnDown = spinner.find('.quantity-down'),
+        min = input.attr('min'),
+        max = input.attr('max');
+
+      btnUp.click(function() {
+        var oldValue = parseFloat(input.val());
+        if (oldValue >= max) {
+          var newVal = oldValue;
+        } else {
+          var newVal = oldValue + 1;
+        }
+        spinner.find("input").val(newVal);
+        spinner.find("input").trigger("change");
+      });
+
+      btnDown.click(function() {
+        var oldValue = parseFloat(input.val());
+        if (oldValue <= min) {
+          var newVal = oldValue;
+        } else {
+          var newVal = oldValue - 1;
+        }
+        spinner.find("input").val(newVal);
+        spinner.find("input").trigger("change");
+      });
+
+    });
 
 //кнопка sandwich
 $(".btn-menu").click(function() {
@@ -22,6 +53,16 @@ $(".menu-mobile a").click(function() {
 
 });
 
+
+/*search mobile*/
+$(".btn-form-back").click(function() {
+	$(".form-search").fadeOut(200);
+	$("body").removeClass("overflow_hidden");
+});
+$(".mobile-search-btn").click(function() {
+	$(".form-search").fadeIn(200);
+	$("body").addClass("overflow_hidden");
+});
 
 $(".overlay-mobile").click(function() {
 		$(".menu-mobile").slideUp(200);
@@ -119,6 +160,12 @@ $('.rfield').keyup(function(){
 		$(this).removeClass('active');
 		$(this).parent().parent(".form-search").removeClass("active-search");
 	}
+});
+
+$(".btn-clear-search").click(function() {
+	 $(".form-search input").val('');
+	 $(this).parent().parent(".form-search").removeClass("active-search");
+	 $(this).parent().parent(".form-search").find(".rfield").removeClass("active");
 });
 
 /*filter*/
