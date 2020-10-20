@@ -2411,7 +2411,7 @@ color: #000;
 
 .radio label input:checked + span:before {
 	background-color: #FFEB3B;
-	border-width: 8.6px;
+	border-width: 7.6px;
 }
 .radio label input:checked + span {
 	font-weight: 400;
