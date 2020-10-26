@@ -198,6 +198,15 @@
 	.order-block__head {
 		margin: 0 -13px;
 	}
+	.col_leftlk {
+		max-width: 22%;
+	}
+	.col_rightlk {
+		max-width: 78%;
+	}
+	.buyer__content .title-min {
+		padding-right: 50px;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -611,6 +620,7 @@
 		position: relative;
 		display: inline-block;
 	}
+	.list-setting-filter li a::before,
 	.list-setting-filter li a::after {
 		position: absolute;
 		display: block;
@@ -624,6 +634,15 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		background-image: url(../img/ic_cancel.svg);
+	}
+	.list-setting-filter li a::before {
+		opacity: 0;
+		transition: all 0.3s;
+		z-index: 2;
+		background-image: url(../img/ic_cancel_hover.svg);
+	}
+	.list-setting-filter li a:hover::before {
+		opacity: 1;
 	}
 
 	.bottom-sidebar {
@@ -1179,7 +1198,7 @@
 	}
 	.thanks {
 		padding-top: 20px;
-				padding-bottom: 100px;
+		padding-bottom: 100px;
 		position: relative;
 		min-height: 100vh;
 	}
@@ -1224,6 +1243,97 @@
 	}
 	.catalog_result {
 		padding-bottom: 50px;
+	}
+	.col_leftlk,
+	.col_rightlk {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.col_leftlk {
+		display: none;
+	}
+	.lk .title-section {
+		padding-bottom: 30px;
+	}
+	.lk-block__line_flex .link-main {
+		display: none;
+	}
+	.lk-block__col-right {
+		border-left: none;
+		border-top: 1px solid #D3D3D3;
+	}
+	.lk-block .item-order {
+		display: block;
+		padding-top: 0;
+	}
+	.lk-block .item-order__name {
+		padding-bottom: 12px;
+	}
+	.lk-block .item-order:last-child {
+		margin-bottom: 0;
+	}
+	.lk {
+		padding-top: 20px;
+		position: relative;
+		padding-bottom: 100px;
+		min-height: 100vh;
+	}
+	.list-categories {
+		display: block;
+	}
+	.list-categories li {
+		width: 100%;
+		margin: 0;
+	}
+	.list-categories__image {
+		display: flex;
+	}
+	.list-categories li a {
+		padding-left: 90px;
+		margin: 0;
+		box-shadow: none;
+		border-radius: 0;
+		border-bottom: 1px solid #D3D3D3;
+	}
+	.list-categories li:last-child a {
+		border: none;
+	}
+	.link-main_edit {
+		width: 24px;
+		height: 24px;
+		overflow: hidden;
+		font-size: 0;
+		color: transparent;
+		background-image: url(../img/ic_edit.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		display: inline-block !important;
+		border: none;
+		padding: 0;
+	}
+		.lk-block__title {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 16px;	
+	} 
+	.modal-wrap {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	.buyer__content .title-section {
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+	.buyer__content {
+		padding-bottom: 50px;
+	}
+	.bottom-authorization, .line-authorization {
+		margin-left: -16px;
+		margin-right: -16px;
+		padding-left: 16px;
+		padding-right: 16px;
 	}
 }
 
@@ -1501,6 +1611,82 @@
 		margin-right: -15px;
 		border-radius: 0;
 	}
+	.lk-block {
+		margin-left: -15px;
+		margin-right: -15px;
+		border-radius: 0;
+	}
+	.empty-block {
+		line-height: 20px;
+		margin-left: -15px;
+		margin-right: -15px;
+		border-radius: 0;
+	}
+	.list-categories li a {
+		border-radius: 0;
+	}
+	.list-categories {
+		margin: 0 -15px;
+	}
+	.lk-social {
+		width: 100%;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+	.lk-social-wrap {
+		margin-top: 20px;
+	}
+	.buyer__content .title-min {
+		padding-right: 0;
+	}
+	.question {
+		margin-left: -15px;
+		margin-right: -15px;
+		border-radius: 0;
+	}
+	.question__name i {
+		margin-left: 40px;
+	}
+	.question__answer {
+		padding-right: 16px;
+	}
+	.buyer__content,
+	.title-min:nth-child(n+2),
+	.title-small_about {
+		margin-left: -15px;
+		margin-right: -15px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.buyer__content .text-medium {
+		margin-top: 37px;
+		display: block;
+	}
+	.buyer__content .social-footer {
+		margin-top: 38px;
+		margin-bottom: 40px;
+	}
+	.buyer__content .footer__mail {
+		margin-bottom: 0;
+	}
+	#map {
+		width: initial;
+		height: 280px;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	.buyer {
+		padding-bottom: 45px;
+	}
+	.title-min {
+		font-size: 16px;
+	}
+	.buyer__content .col-lg-6:nth-child(2) .title-small:first-of-type {
+		padding-top: 40px;
+	}
+	.buyer {
+		padding-top: 20px;
+	}
 }
 @media only screen and (max-width : 576px) {
 	.hidden_smallmobile {
@@ -1630,6 +1816,13 @@
 	}
 	.section-item {
 		padding: 0 10px;
+	}
+	.lk-block__line {
+		padding-left: 14px;
+		padding-right: 14px;
+	}
+	.links-input .link-main {
+		font-size: 12px;
 	}
 }
 

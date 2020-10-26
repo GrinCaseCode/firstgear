@@ -1,36 +1,36 @@
 $(document).ready(function() {
 
-    jQuery('.quantity').each(function() {
-      var spinner = jQuery(this),
-        input = spinner.find('input[type="number"]'),
-        btnUp = spinner.find('.quantity-up'),
-        btnDown = spinner.find('.quantity-down'),
-        min = input.attr('min'),
-        max = input.attr('max');
+	jQuery('.quantity').each(function() {
+		var spinner = jQuery(this),
+		input = spinner.find('input[type="number"]'),
+		btnUp = spinner.find('.quantity-up'),
+		btnDown = spinner.find('.quantity-down'),
+		min = input.attr('min'),
+		max = input.attr('max');
 
-      btnUp.click(function() {
-        var oldValue = parseFloat(input.val());
-        if (oldValue >= max) {
-          var newVal = oldValue;
-        } else {
-          var newVal = oldValue + 1;
-        }
-        spinner.find("input").val(newVal);
-        spinner.find("input").trigger("change");
-      });
+		btnUp.click(function() {
+			var oldValue = parseFloat(input.val());
+			if (oldValue >= max) {
+				var newVal = oldValue;
+			} else {
+				var newVal = oldValue + 1;
+			}
+			spinner.find("input").val(newVal);
+			spinner.find("input").trigger("change");
+		});
 
-      btnDown.click(function() {
-        var oldValue = parseFloat(input.val());
-        if (oldValue <= min) {
-          var newVal = oldValue;
-        } else {
-          var newVal = oldValue - 1;
-        }
-        spinner.find("input").val(newVal);
-        spinner.find("input").trigger("change");
-      });
+		btnDown.click(function() {
+			var oldValue = parseFloat(input.val());
+			if (oldValue <= min) {
+				var newVal = oldValue;
+			} else {
+				var newVal = oldValue - 1;
+			}
+			spinner.find("input").val(newVal);
+			spinner.find("input").trigger("change");
+		});
 
-    });
+	});
 
 //кнопка sandwich
 $(".btn-menu").click(function() {
@@ -65,7 +65,7 @@ $(".mobile-search-btn").click(function() {
 });
 
 $(".overlay-mobile").click(function() {
-		$(".menu-mobile").slideUp(200);
+	$(".menu-mobile").slideUp(200);
 	$(".catalog-sidebar, .sorting-mobile").slideUp(200);
 	$("body").removeClass("overflow_hidden");
 	$(".overlay-mobile").fadeOut(200);
@@ -94,9 +94,37 @@ $(".сontrols-catalog__btn_sorting").click(function() {
 
 });
 
+/*questions*/
+$(".question__name").click(function(e) {
+	e.preventDefault();
+	$(".question").removeClass("active");
+
+	$(".question__answer").slideUp(200);
+	if ($(this).siblings(".question__answer").is(":hidden")) {
+		$(this).parent().addClass("active");
+		$(this).siblings(".question__answer").slideDown(200);
+
+	} else {
+		$(this).parent().removeClass("active");
+		$(this).siblings(".question__answer").slideUp(200);
+
+	}
+
+});
 
 
 
+/*passsword*/
+$(".show-password").click(function() {
+
+	$(this).toggleClass("active");
+	var input = $($(this).siblings("input"));
+	if (input.attr("type") == "password") {
+		input.attr("type", "text");
+	} else {
+		input.attr("type", "password");
+	}
+});
 // mask-input 
 
 $(".input-phone").mask("+7 (999) 999-99-99");
@@ -105,6 +133,46 @@ $(".input-phone").mask("+7 (999) 999-99-99");
 $("#callback button.btn-main, #modal-order-quick button.btn-main").click(function(e) {
 	e.preventDefault();
 	$.fancybox.open("#thanks-callback");
+});
+
+$("#modal-edit-name button.btn-main").click(function(e) {
+	e.preventDefault();
+	$.fancybox.open("#send-edit-name");
+});
+
+$("#modal-edit-phone button.btn-main").click(function(e) {
+	e.preventDefault();
+	$.fancybox.open("#modal-confirm-phone");
+});
+
+$("#modal-confirm-phone button.btn-main").click(function(e) {
+	e.preventDefault();
+	$.fancybox.open("#send-edit-phone");
+});
+
+$("#modal-edit-email button.btn-main").click(function(e) {
+	e.preventDefault();
+	$.fancybox.open("#modal-confirm-email");
+});
+
+$("#modal-confirm-email button.btn-main").click(function(e) {
+	e.preventDefault();
+	$.fancybox.open("#send-edit-email");
+});
+
+$("#modal-remove .btn-main").click(function(e) {
+	e.preventDefault();
+	$.fancybox.open("#send-remove");
+});
+
+$("#modal-authorization button.btn-main").click(function(e) {
+	e.preventDefault();
+	$.fancybox.open("#modal-confirm-authorization");
+});
+
+$("#modal-registration button.btn-main").click(function(e) {
+	e.preventDefault();
+	$.fancybox.open("#modal-confirm-registration");
 });
 
 /*range slider*/
@@ -118,7 +186,7 @@ $range.ionRangeSlider({
 	min: min,
 	max: max,
 	from: 0,
-        to: 3000,
+	to: 3000,
 	prettify_enabled: true,
 	onChange: function(data) {
 		updateValues()
@@ -163,9 +231,9 @@ $('.rfield').keyup(function(){
 });
 
 $(".btn-clear-search").click(function() {
-	 $(".form-search input").val('');
-	 $(this).parent().parent(".form-search").removeClass("active-search");
-	 $(this).parent().parent(".form-search").find(".rfield").removeClass("active");
+	$(".form-search input").val('');
+	$(this).parent().parent(".form-search").removeClass("active-search");
+	$(this).parent().parent(".form-search").find(".rfield").removeClass("active");
 });
 
 /*filter*/
@@ -271,12 +339,12 @@ $(".item-product__like").click(function(e) {
 		asNavFor: '.slider-for',
 		vertical: true,
 		dots: false,
-		 verticalSwiping: true,
+		verticalSwiping: true,
 		focusOnSelect: true,
 		responsive: [{
 			breakpoint: 768,
 			settings: {
-			
+
 			}
 
 		}]
@@ -289,7 +357,7 @@ $(".item-product__like").click(function(e) {
 		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-angle-right"></i><div/>',
 		infinite: false,
 		swipeToSlide: true,
-    	touchThreshold: 1000,
+		touchThreshold: 1000,
 		slidesToShow: 5,
 		slidesToScroll: 1,
 		responsive: [
@@ -327,7 +395,7 @@ $(".item-product__like").click(function(e) {
 
 	$('.tabs li:not(:last-child) a').click(function(e) {
 		e.preventDefault();
-		 $('.tab-pane iframe').attr('src', $('.tab-pane iframe').attr('src'));
+		$('.tab-pane iframe').attr('src', $('.tab-pane iframe').attr('src'));
 	});
 
 	$('.tabs-inner li a').click(function(e) {
