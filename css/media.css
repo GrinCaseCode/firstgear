@@ -1666,6 +1666,9 @@
 		margin-top: 38px;
 		margin-bottom: 40px;
 	}
+	.buyer_main .buyer__content .social-footer {
+		margin-bottom: 0;
+	}
 	.buyer__content .footer__mail {
 		margin-bottom: 0;
 	}
