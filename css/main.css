@@ -4193,3 +4193,6 @@ input[type=number] {
 .bottom-authorization a {
 	font-weight: 400;
 }
+.buyer_main .btn-transparent.btn-transparent_black {
+	margin-top: 30px;
+}
