@@ -4196,3 +4196,6 @@ input[type=number] {
 .buyer_main .btn-transparent.btn-transparent_black {
 	margin-top: 30px;
 }
+.gm-style-mtc {
+	display: none !important;
+}
