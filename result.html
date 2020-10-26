@@ -35,13 +35,13 @@
 				<li class="nav-mobile__sale"><a href="#"><span class="nav-mobile__icon nav-mobile__icon_icon2"></span>Горячие скидки <i class="far fa-angle-right"></i></a></li>
 				<li><a href="#"><span class="nav-mobile__icon nav-mobile__icon_icon3"></span>Автосервис <i class="far fa-angle-right"></i></a></li>
 			</ul>
-			<div class="menu-mobile__name">Профиль отсутствует</div>
+			<div class="menu-mobile__name">Сергей Иванов</div>
 			<ul class="links-menu">
 				<li><a href="#"><span class="links-menu__icon links-menu__icon_1"></span>Личные данные</a></li>
 				<li><a href="#"><span class="links-menu__icon links-menu__icon_2"></span>Мои заказы</a></li>
 				<li><a href="#"><span class="links-menu__icon links-menu__icon_3"></span>Избранное <strong> (2)</strong></a></li>
 			</ul>
-			<a href="#modal-authorization" class="btn-login btn-login_authorization fancybox"><span class="btn-login__icon"></span>Вход / регистрация</a>
+			<a href="#" class="btn-login"><span class="btn-login__icon"></span>Выйти из аккаунта</a>
 			<div class="menu-mobile__bottom">
 				<ul>
 					<li>
@@ -205,11 +205,20 @@
 								</a>
 							</div>
 							<div class="wrap-personal hidden_mobile">
-								<a href="#modal-authorization" class="item-personal item-personal_cabinet fancybox">
+								<a href="#" class="item-personal item-personal_cabinet">
 									<span class="item-personal__icon">
 									</span>
 									<span class="item-personal__name">Кабинет</span>
 								</a>
+								<div class="popup-personal">
+									<div class="popup-personal__name">Сергей Иванов</div>
+									<ul class="links-menu">
+										<li><a href="#"><span class="links-menu__icon links-menu__icon_1"></span>Личные данные</a></li>
+										<li><a href="#"><span class="links-menu__icon links-menu__icon_2"></span>Мои заказы</a></li>
+										<li><a href="#"><span class="links-menu__icon links-menu__icon_3"></span>Избранное <strong> (2)</strong></a></li>
+									</ul>
+									<a href="#" class="btn-login"><span class="btn-login__icon"></span>Выйти из аккаунта</a>
+								</div>
 							</div>
 							<div class="wrap-personal">
 								<a href="#" class="item-personal item-personal_basket">
@@ -757,15 +766,15 @@
 			</div>
 		</header>
 
-		<div class="catalog">
+		<div class="catalog catalog_result">
 			<div class="container">
 				<ul class="breadcumbs">
 					<li><a href="#">Главная</a> <i class="far fa-angle-right"></i></li>
-					<li><a href="#">Масла</a> <i class="far fa-angle-right"></i></li>
-					<li>Моторные</li>
+					<li>Результаты поиска</li>
 				</ul>
 				<a href="#" class="btn-back"></a>
-				<div class="title-section">Моторные масла</div>
+				<div class="title-section">Результаты поиска</div>
+				<div class="result-title">Найдено по запросу <span>"масло"</span> 3200 предложений</div>
 				<div class="сontrols-catalog">
 					<div class="сontrols-catalog__btn сontrols-catalog__btn_sorting">
 						<p>Сортировка</p>
@@ -816,6 +825,15 @@
 				</div>
 				<div class="catalog-wrapper">
 					<div class="catalog-sidebar">
+						<div class="result-sidebar">
+							<a href="#" class="title-result-sidebar">Масла</a>
+							<ul class="list-result-sidebar">
+								<li><a href="#">Моторные (1023)</a></li>
+								<li><a href="#">Трансмиссионные (2681)</a></li>
+								<li><a href="#">Промывочные (633)</a></li>
+								<li><a href="#">Промышленные (633)</a></li>
+							</ul>
+						</div>
 						<div class="show_adaptive">
 							<div class="setting-sidebar-title">Настройка фильтров</div>
 							<ul class="list-setting-filter">
@@ -824,30 +842,6 @@
 								<li><a href="#">Фильтр 3 &nbsp; &nbsp;</a></li>
 								<li><a href="#">Фильтр 4</a></li>
 							</ul>
-						</div>
-						<div class="item-filter active hidden_adptive">
-							<div class="item-filter__name">Выбранные фильтры <i class="far fa-angle-down"></i></div>
-							<div class="item-filter__content" style="display: block;">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" checked="checked" />
-										<span>Фильтр 1</span>
-									</label>
-								</div>
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" checked="checked" />
-										<span>Фильтр 2</span>
-									</label>
-								</div>
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" checked="checked" />
-										<span>Фильтр 3</span>
-									</label>
-								</div>
-								<button class="btn-transparent btn-transparent_black">Сбросить все фильтры</button>
-							</div>
 						</div>
 						<div class="item-filter active">
 							<div class="item-filter__name">Цена <i class="far fa-angle-down"></i></div>
@@ -907,81 +901,6 @@
 									</label>
 								</div>
 								<a href="#" class="link-main">Показать еще</a>
-							</div>
-						</div>
-						<div class="item-filter">
-							<div class="item-filter__name">Вязкость <div class="hint"><span>?</span> <div class="hint__content">Небольшое описание характеристики товара в несколько строчек</div></div> <i class="far fa-angle-down"></i></div>
-							<div class="item-filter__content">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" />
-										<span>AKVILON <span>(10)</span></span>
-									</label>
-								</div>
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" />
-										<span>AKVILON <span>(10)</span></span>
-									</label>
-								</div>
-							</div>
-						</div>
-						<div class="item-filter">
-							<div class="item-filter__name">Двигатель <i class="far fa-angle-down"></i></div>
-							<div class="item-filter__content">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" />
-										<span>AKVILON <span>(10)</span></span>
-									</label>
-								</div>
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" />
-										<span>AKVILON <span>(10)</span></span>
-									</label>
-								</div>
-							</div>
-						</div>
-						<div class="item-filter active">
-							<div class="item-filter__name">Состав <i class="far fa-angle-down"></i></div>
-							<div class="item-filter__content" style="display: block;">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" />
-										<span>Минеральные <span>(10)</span></span>
-									</label>
-								</div>
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" />
-										<span>Полусинтетические <span>(10)</span></span>
-									</label>
-								</div>
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" />
-										<span>Синтетические <span>(10)</span></span>
-									</label>
-								</div>
-								<a href="#" class="link-main">Показать еще</a>
-							</div>
-						</div>
-						<div class="item-filter">
-							<div class="item-filter__name">Емкость тары <div class="hint"><span>?</span> <div class="hint__content">Небольшое описание характеристики товара в несколько строчек</div></div> <i class="far fa-angle-down"></i></div>
-							<div class="item-filter__content">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" />
-										<span>AKVILON <span>(10)</span></span>
-									</label>
-								</div>
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" />
-										<span>AKVILON <span>(10)</span></span>
-									</label>
-								</div>
 							</div>
 						</div>
 						<div class="hidden_adptive">
@@ -1239,16 +1158,6 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-xl-3 col-sm-4 hidden_smallmobile">
-								<div class="item-product-sale">
-									<div class="item-product-sale__title">Скидки на всю электронику до</div>
-									<div class="item-product-sale__image">
-										<img src="img/prod_sale1.png" alt="alt">
-										<div class="sale-text">-25%</div>
-									</div>
-									<a href="#" class="btn-main">Посмотреть</a>
-								</div>
-							</div>
 							<div class="col-xl-3 col-sm-4 col-6">
 								<div class="item-product">
 									<a href="#" class="item-product__like"></a>
@@ -1369,18 +1278,6 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-12 hidden_smallmobile">
-								<div class="item-product-bigsale">
-									<div class="item-product-bigsale__image">
-										<img src="img/prod_sale2.png" alt="alt">
-										<div class="sale-text">-25%</div>
-									</div>
-									<div class="item-product-bigsale__right">
-										<div class="item-product-bigsale__name">Скидки на аккумуляторы WESTA до <span>20.09.20</span></div>
-										<a href="#" class="btn-main">Посмотреть</a>
-									</div>
-								</div>
-							</div>
 							<div class="col-xl-3 col-sm-4 col-6">
 								<div class="item-product">
 									<a href="#" class="item-product__like"></a>
@@ -1411,96 +1308,6 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-xl-3 col-sm-4 col-6">
-								<div class="item-product">
-									<a href="#" class="item-product__like"></a>
-									<ul class="item-product__additional">
-
-									</ul>
-									<div class="item-product__code">Код товара: 358297</div>
-									<div class="item-product__image">
-										<img src="img/product1_7.png" alt="alt">
-									</div>
-									<div class="item-product__brand">Doctor Wax</div>
-									<a href="#" class="item-product__name">Масло моторное DIESEL LEICHTLAUF 10W-40 5 Л 8034</a>
-									<div class="item-product__bottom">
-										<div class="item-product__left">
-											<div class="item-product__price"><span>1200</span> грн.</div>
-											<div class="item-product__status item-product__status_out">Заканчивается</div>
-										</div>
-										<a href="#" class="btn-basket"></a>
-									</div>
-									<div class="item-product__info">
-										<p><span>страна производитель:</span> Финляндия</p>
-										<p><span>двигатель:</span> для бензинового и дизельного двигателя</p>
-										<p><span>вязкость:</span> 5W-40</p>
-										<p><span>состав:</span> Синтетические</p>
-										<p><span>вид тары:</span> Канистра</p>
-										<p><span>емкость тары:</span> 4л</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-xl-3 col-sm-4 col-6">
-								<div class="item-product">
-									<a href="#" class="item-product__like"></a>
-									<ul class="item-product__additional">
-										<li><img src="img/ic_adit1.svg" alt="alt"></li>
-										<li><img src="img/ic_adit2.png" alt="alt"></li>
-									</ul>
-									<div class="item-product__action">-25%</div>
-									<div class="item-product__code">Код товара: 358297</div>
-									<div class="item-product__image">
-										<img src="img/product1_8.png" alt="alt">
-									</div>
-									<div class="item-product__brand">MOBIL</div>
-									<a href="#" class="item-product__name">Моторное масло MOBIL 1 ESP 5W-30 4л</a>
-									<div class="item-product__bottom">
-										<div class="item-product__left">
-											<div class="item-product__price item-product__price_new"><span>800</span> грн.</div>
-											<div class="item-product__price item-product__price_old"><span>960</span> грн.</div>
-											<div class="item-product__status">В наличии</div>
-										</div>
-										<a href="#" class="btn-basket"></a>
-									</div>
-									<div class="item-product__info">
-										<p><span>страна производитель:</span> Финляндия</p>
-										<p><span>двигатель:</span> для бензинового и дизельного двигателя</p>
-										<p><span>вязкость:</span> 5W-40</p>
-										<p><span>состав:</span> Синтетические</p>
-										<p><span>вид тары:</span> Канистра</p>
-										<p><span>емкость тары:</span> 4л</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-xl-3 col-sm-4 col-6 hidden_tablet">
-								<div class="item-product">
-									<a href="#" class="item-product__like"></a>
-									<ul class="item-product__additional">
-
-									</ul>
-									<div class="item-product__code">Код товара: 358297</div>
-									<div class="item-product__image">
-										<img src="img/product1_4.png" alt="alt">
-									</div>
-									<div class="item-product__brand">Doctor Wax</div>
-									<a href="#" class="item-product__name">Масло моторное DIESEL LEICHTLAUF 10W-40 5 Л 8034</a>
-									<div class="item-product__bottom">
-										<div class="item-product__left">
-											<div class="item-product__price"><span>1200</span> грн.</div>
-											<div class="item-product__status item-product__status_out">Заканчивается</div>
-										</div>
-										<a href="#" class="btn-basket"></a>
-									</div>
-									<div class="item-product__info">
-										<p><span>страна производитель:</span> Финляндия</p>
-										<p><span>двигатель:</span> для бензинового и дизельного двигателя</p>
-										<p><span>вязкость:</span> 5W-40</p>
-										<p><span>состав:</span> Синтетические</p>
-										<p><span>вид тары:</span> Канистра</p>
-										<p><span>емкость тары:</span> 4л</p>
-									</div>
-								</div>
-							</div>
 						</div>
 						<div class="bottom-catalog">
 							<a href="#" class="btn-transparent btn-transparent_black">Загрузить еще 24 товара</a>
@@ -1518,281 +1325,6 @@
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="section-products section-products_page">
-			<div class="container">
-				<div class="title-section title-section_page">Популярные товары</div>
-				<ul class="slider-products arrows_right">
-					<li>
-						<div class="item-product">
-							<a href="#" class="item-product__like"></a>
-							<ul class="item-product__additional">
-								<li><img src="img/ic_adit1.svg" alt="alt"></li>
-								<li><img src="img/ic_adit2.png" alt="alt"></li>
-							</ul>
-							<div class="item-product__code">Код товара: 358297</div>
-							<div class="item-product__image">
-								<img src="img/product1.png" alt="alt">
-							</div>
-							<div class="item-product__brand">Vatoil</div>
-							<a href="#" class="item-product__name">Тормозная жидкость Vatoil DOT 4 1л (50117)</a>
-							<div class="item-product__bottom">
-								<div class="item-product__left">
-									<div class="item-product__price"><span>180</span> грн.</div>
-									<div class="item-product__status">В наличии</div>
-								</div>
-								<a href="#" class="btn-basket"></a>
-							</div>
-							<div class="item-product__info">
-								<p><span>страна производитель:</span> Финляндия</p>
-								<p><span>двигатель:</span> для бензинового и дизельного двигателя</p>
-								<p><span>вязкость:</span> 5W-40</p>
-								<p><span>состав:</span> Синтетические</p>
-								<p><span>вид тары:</span> Канистра</p>
-								<p><span>емкость тары:</span> 4л</p>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="item-product">
-							<a href="#" class="item-product__like"></a>
-							<ul class="item-product__additional">
-
-							</ul>
-							<div class="item-product__code">Код товара: 358297</div>
-							<div class="item-product__image">
-								<img src="img/product2.png" alt="alt">
-							</div>
-							<div class="item-product__brand">A-MEGA</div>
-							<a href="#" class="item-product__name">Аккумулятор A-MEGA 6СТ-60 АЗ (1) Standard</a>
-							<div class="item-product__bottom">
-								<div class="item-product__left">
-									<div class="item-product__price"><span>1200</span> грн.</div>
-									<div class="item-product__status item-product__status_out">Заканчивается</div>
-								</div>
-								<a href="#" class="btn-basket"></a>
-							</div>
-							<div class="item-product__info">
-								<p><span>страна производитель:</span> Финляндия</p>
-								<p><span>двигатель:</span> для бензинового и дизельного двигателя</p>
-								<p><span>вязкость:</span> 5W-40</p>
-								<p><span>состав:</span> Синтетические</p>
-								<p><span>вид тары:</span> Канистра</p>
-								<p><span>емкость тары:</span> 4л</p>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="item-product">
-							<a href="#" class="item-product__like"></a>
-							<ul class="item-product__additional">
-								<li><img src="img/ic_adit1.svg" alt="alt"></li>
-								<li><img src="img/ic_adit2.png" alt="alt"></li>
-							</ul>
-							<div class="item-product__code">Код товара: 358297</div>
-							<div class="item-product__image">
-								<img src="img/product3.png" alt="alt">
-							</div>
-							<div class="item-product__brand">SAKURA</div>
-							<a href="#" class="item-product__name">Диск SAKURA 6,5х15 5/105 ET35 DIA 56.6 алмаз</a>
-							<div class="item-product__bottom">
-								<div class="item-product__left">
-									<div class="item-product__price"><span>1000</span> грн.</div>
-									<div class="item-product__status">В наличии</div>
-								</div>
-								<a href="#" class="btn-basket"></a>
-							</div>
-							<div class="item-product__info">
-								<p><span>страна производитель:</span> Финляндия</p>
-								<p><span>двигатель:</span> для бензинового и дизельного двигателя</p>
-								<p><span>вязкость:</span> 5W-40</p>
-								<p><span>состав:</span> Синтетические</p>
-								<p><span>вид тары:</span> Канистра</p>
-								<p><span>емкость тары:</span> 4л</p>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="item-product">
-							<a href="#" class="item-product__like"></a>
-							<ul class="item-product__additional">
-								<li><img src="img/ic_adit1.svg" alt="alt"></li>
-								<li><img src="img/ic_adit2.png" alt="alt"></li>
-							</ul>
-							<div class="item-product__action">-25%</div>
-							<div class="item-product__code">Код товара: 358297</div>
-							<div class="item-product__image">
-								<img src="img/product4.png" alt="alt">
-							</div>
-							<div class="item-product__brand">MOTUL</div>
-							<a href="#" class="item-product__name">MOTUL Dexron IID 2л (325902)</a>
-							<div class="item-product__bottom">
-								<div class="item-product__left">
-									<div class="item-product__price item-product__price_new"><span>450</span> грн.</div>
-									<div class="item-product__price item-product__price_old"><span>500</span> грн.</div>
-									<div class="item-product__status">В наличии</div>
-								</div>
-								<a href="#" class="btn-basket"></a>
-							</div>
-							<div class="item-product__info">
-								<p><span>страна производитель:</span> Финляндия</p>
-								<p><span>двигатель:</span> для бензинового и дизельного двигателя</p>
-								<p><span>вязкость:</span> 5W-40</p>
-								<p><span>состав:</span> Синтетические</p>
-								<p><span>вид тары:</span> Канистра</p>
-								<p><span>емкость тары:</span> 4л</p>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="item-product">
-							<a href="#" class="item-product__like"></a>
-							<ul class="item-product__additional">
-								<li><img src="img/ic_adit1.svg" alt="alt"></li>
-								<li><img src="img/ic_adit2.png" alt="alt"></li>
-							</ul>
-							<div class="item-product__code">Код товара: 358297</div>
-							<div class="item-product__image">
-								<img src="img/product5.png" alt="alt">
-							</div>
-							<div class="item-product__brand">Globex</div>
-							<a href="#" class="item-product__name">Видеорегистратор Globex GE-112</a>
-							<div class="item-product__bottom">
-								<div class="item-product__left">
-									<div class="item-product__price"><span>800</span> грн.</div>
-									<div class="item-product__status">В наличии</div>
-								</div>
-								<a href="#" class="btn-basket"></a>
-							</div>
-							<div class="item-product__info">
-								<p><span>страна производитель:</span> Финляндия</p>
-								<p><span>двигатель:</span> для бензинового и дизельного двигателя</p>
-								<p><span>вязкость:</span> 5W-40</p>
-								<p><span>состав:</span> Синтетические</p>
-								<p><span>вид тары:</span> Канистра</p>
-								<p><span>емкость тары:</span> 4л</p>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="item-product">
-							<a href="#" class="item-product__like"></a>
-							<ul class="item-product__additional">
-								<li><img src="img/ic_adit1.svg" alt="alt"></li>
-								<li><img src="img/ic_adit2.png" alt="alt"></li>
-							</ul>
-							<div class="item-product__code">Код товара: 358297</div>
-							<div class="item-product__image">
-								<img src="img/product1.png" alt="alt">
-							</div>
-							<div class="item-product__brand">Vatoil</div>
-							<a href="#" class="item-product__name">Тормозная жидкость Vatoil DOT 4 1л (50117)</a>
-							<div class="item-product__bottom">
-								<div class="item-product__left">
-									<div class="item-product__price"><span>180</span> грн.</div>
-									<div class="item-product__status">В наличии</div>
-								</div>
-								<a href="#" class="btn-basket"></a>
-							</div>
-							<div class="item-product__info">
-								<p><span>страна производитель:</span> Финляндия</p>
-								<p><span>двигатель:</span> для бензинового и дизельного двигателя</p>
-								<p><span>вязкость:</span> 5W-40</p>
-								<p><span>состав:</span> Синтетические</p>
-								<p><span>вид тары:</span> Канистра</p>
-								<p><span>емкость тары:</span> 4л</p>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="item-product">
-							<a href="#" class="item-product__like"></a>
-							<ul class="item-product__additional">
-								<li><img src="img/ic_adit1.svg" alt="alt"></li>
-								<li><img src="img/ic_adit2.png" alt="alt"></li>
-							</ul>
-							<div class="item-product__code">Код товара: 358297</div>
-							<div class="item-product__image">
-								<img src="img/product3.png" alt="alt">
-							</div>
-							<div class="item-product__brand">SAKURA</div>
-							<a href="#" class="item-product__name">Диск SAKURA 6,5х15 5/105 ET35 DIA 56.6 алмаз</a>
-							<div class="item-product__bottom">
-								<div class="item-product__left">
-									<div class="item-product__price"><span>1000</span> грн.</div>
-									<div class="item-product__status">В наличии</div>
-								</div>
-								<a href="#" class="btn-basket"></a>
-							</div>
-							<div class="item-product__info">
-								<p><span>страна производитель:</span> Финляндия</p>
-								<p><span>двигатель:</span> для бензинового и дизельного двигателя</p>
-								<p><span>вязкость:</span> 5W-40</p>
-								<p><span>состав:</span> Синтетические</p>
-								<p><span>вид тары:</span> Канистра</p>
-								<p><span>емкость тары:</span> 4л</p>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="item-product">
-							<a href="#" class="item-product__like"></a>
-							<ul class="item-product__additional">
-								<li><img src="img/ic_adit1.svg" alt="alt"></li>
-								<li><img src="img/ic_adit2.png" alt="alt"></li>
-							</ul>
-							<div class="item-product__action">-25%</div>
-							<div class="item-product__code">Код товара: 358297</div>
-							<div class="item-product__image">
-								<img src="img/product4.png" alt="alt">
-							</div>
-							<div class="item-product__brand">MOTUL</div>
-							<a href="#" class="item-product__name">MOTUL Dexron IID 2л (325902)</a>
-							<div class="item-product__bottom">
-								<div class="item-product__left">
-									<div class="item-product__price item-product__price_new"><span>450</span> грн.</div>
-									<div class="item-product__price item-product__price_old"><span>500</span> грн.</div>
-									<div class="item-product__status">В наличии</div>
-								</div>
-								<a href="#" class="btn-basket"></a>
-							</div>
-							<div class="item-product__info">
-								<p><span>страна производитель:</span> Финляндия</p>
-								<p><span>двигатель:</span> для бензинового и дизельного двигателя</p>
-								<p><span>вязкость:</span> 5W-40</p>
-								<p><span>состав:</span> Синтетические</p>
-								<p><span>вид тары:</span> Канистра</p>
-								<p><span>емкость тары:</span> 4л</p>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-
-		<div class="about-company">
-			<div class="container">
-				<div class="title-section">Необходимая автохимия</div>
-				<div class="text-main hidden_mobile">
-					<p>Крупнейшая сеть магазинов и интернет-магазин по продаже автотоваров в Украине. Наша основная цель, сделать Вашу покупку максимально удобной и выгодной! Удобное месторасположение магазинов, специальные ценовые предложения, а также самый большой выбор автотоваров в Украине позволяет сделать Ваши покупки быстрыми и удобными! В ассортименте магазинов "AUTOBAZA" постоянно присутствуют высокотехнологичные товары и новинки рынка. Квалифицированные специалисты как в магазине так и в колл центре смогут помочь подобрать оптимальный товар под Ваше авто. </p>
-					<p>Наша цель - предоставить клиентам весь спектр качественных автомобильных и около автомобильных товаров в одном месте, потому наш ассортимент поистене велик - более 200 тысяч товаров в каталоге! И это количество с каждым днем растет. Автоэлектроника, звук и видео, фары и свет, инструменты, автохимия, масло, запчасти и расходники, автотуризми и джиппинг - далеко не полный перечень нашего каталога. У нас представлены самые лучшие и топовые бренды производителей: Pioneer, Alpine, JBL, Focal, Garmin, Bosch, Philips, Thule, Motul,Castrol, Mobil и сотни других проверенных десятком лет. Мы уверены, что в нашем магазине Вы найдете всё необходимое для своего любимого авто.</p>
-					<div class="hidden-text">
-						<p>Крупнейшая сеть магазинов и интернет-магазин по продаже автотоваров в Украине. Наша основная цель, сделать Вашу покупку максимально удобной и выгодной! Удобное месторасположение магазинов, специальные ценовые предложения, а также самый большой выбор автотоваров в Украине позволяет сделать Ваши покупки быстрыми и удобными! В ассортименте магазинов "AUTOBAZA" постоянно присутствуют высокотехнологичные товары и новинки рынка. Квалифицированные специалисты как в магазине так и в колл центре смогут помочь подобрать оптимальный товар под Ваше авто. </p>
-						<p>Наша цель - предоставить клиентам весь спектр качественных автомобильных и около автомобильных товаров в одном месте, потому наш ассортимент поистене велик - более 200 тысяч товаров в каталоге! И это количество с каждым днем растет. Автоэлектроника, звук и видео, фары и свет, инструменты, автохимия, масло, запчасти и расходники, автотуризми и джиппинг - далеко не полный перечень нашего каталога. У нас представлены самые лучшие и топовые бренды производителей: Pioneer, Alpine, JBL, Focal, Garmin, Bosch, Philips, Thule, Motul,Castrol, Mobil и сотни других проверенных десятком лет. Мы уверены, что в нашем магазине Вы найдете всё необходимое для своего любимого авто.</p>
-					</div>
-					<a href="#" class="link-text">Показать весь текст <i class="far fa-angle-down"></i></a>
-				</div>
-				<div class="text-main show_mobile">
-					<p>Крупнейшая сеть магазинов и интернет-магазин по продаже автотоваров в Украине. Наша основная цель, сделать Вашу покупку максимально удобной и выгодной!</p>
-					<p>Удобное месторасположение магазинов, специальные ценовые предложения, а также самый большой выбор автотоваров в Украине позволяет сделать Ваши покупки быстрыми</p>
-					<div class="hidden-text">
-						<p>Крупнейшая сеть магазинов и интернет-магазин по продаже автотоваров в Украине. Наша основная цель, сделать Вашу покупку максимально удобной и выгодной! Удобное месторасположение магазинов, специальные ценовые предложения, а также самый большой выбор автотоваров в Украине позволяет сделать Ваши покупки быстрыми и удобными! В ассортименте магазинов "AUTOBAZA" постоянно присутствуют высокотехнологичные товары и новинки рынка. Квалифицированные специалисты как в магазине так и в колл центре смогут помочь подобрать оптимальный товар под Ваше авто. </p>
-						<p>Наша цель - предоставить клиентам весь спектр качественных автомобильных и около автомобильных товаров в одном месте, потому наш ассортимент поистене велик - более 200 тысяч товаров в каталоге! И это количество с каждым днем растет. Автоэлектроника, звук и видео, фары и свет, инструменты, автохимия, масло, запчасти и расходники, автотуризми и джиппинг - далеко не полный перечень нашего каталога. У нас представлены самые лучшие и топовые бренды производителей: Pioneer, Alpine, JBL, Focal, Garmin, Bosch, Philips, Thule, Motul,Castrol, Mobil и сотни других проверенных десятком лет. Мы уверены, что в нашем магазине Вы найдете всё необходимое для своего любимого авто.</p>
-					</div>
-					<a href="#" class="link-text">Показать весь текст <i class="far fa-angle-down"></i></a>
 				</div>
 			</div>
 		</div>
@@ -1923,117 +1455,6 @@
 	<div id="thanks-callback" class="modal-block">
 		<div class="modal-wrap">
 			<div class="success-send"><div class="success-send__icon"></div>Спасибо за заказ. Наш менеджер свяжется с вами в течение 5 минут, чтобы уточнить что вы хочете.</div>
-		</div>
-	</div>
-
-	<div id="modal-authorization" class="modal-block">
-		<div class="modal-wrap modal-wrap_page">
-			<div class="modal-block__title">Вход в аккаунт</div>
-			<form>
-				<div class="item-form">
-					<input type="text" required="required" class="rfield">
-					<div class="item-form__descr">Ваше имя</div>
-				</div>
-				<div class="item-form">
-					<input type="text" required="required" class="rfield">
-					<div class="item-form__descr">Ваша почта / телефон</div>
-				</div>
-				<button class="btn-main">Войти</button>
-
-				<div class="line-authorization">
-					<p>Или войти с помощью:</p>
-					<a href="#" class="btn-social btn-social_fb"><img src="img/ic_author1.svg" alt="alt"></a>
-					<a href="#" class="btn-social btn-social_gl"><img src="img/ic_author2.svg" alt="alt"></a>
-				</div>
-				<div class="bottom-authorization">
-					<p>Нет учетной записи? <a href="#modal-registration" class="link-main fancybox">Зарегистрироваться</a></p>
-				</div>
-			</form>
-		</div>
-	</div>
-
-	<div id="modal-confirm-authorization" class="modal-block">
-		<div class="modal-wrap modal-wrap_page">
-			<div class="modal-block__title">Вход в аккаунт</div>
-			<div class="modal-block__descr">На указанный телефон / почту был отправлен код подтверждения. Введите его в поле.</div>
-			<form>
-				<div class="item-form">
-					<input type="password" required="required" class="rfield">
-					<div class="item-form__descr">Код</div>
-					<div class="show-password"></div>
-				</div>
-				<div class="links-input">
-					<a href="#" class="link-main">Отправить код снова</a>
-					<a href="#" class="link-main">Изменить данные</a>
-				</div>
-				<button class="btn-main">Подтвердить код</button>
-				<div class="line-authorization">
-					<p>Или войти с помощью:</p>
-					<a href="#" class="btn-social btn-social_fb"><img src="img/ic_author1.svg" alt="alt"></a>
-					<a href="#" class="btn-social btn-social_gl"><img src="img/ic_author2.svg" alt="alt"></a>
-				</div>
-				<div class="bottom-authorization">
-					<p>Нет учетной записи? <a href="#modal-registration" class="link-main fancybox">Зарегистрироваться</a></p>
-				</div>
-			</form>
-		</div>
-	</div>
-
-	<div id="modal-registration" class="modal-block">
-		<div class="modal-wrap modal-wrap_page">
-			<div class="modal-block__title">Регистрация</div>
-			<form>
-				<div class="item-form">
-					<input type="text" required="required" class="rfield">
-					<div class="item-form__descr">Ваше имя</div>
-				</div>
-				<div class="item-form">
-					<input type="text" required="required" class="rfield input-phone">
-					<div class="item-form__descr">Ваш телефон</div>
-				</div>
-				<div class="item-form">
-					<input type="text" required="required" class="rfield">
-					<div class="item-form__descr">Ваша почта</div>
-				</div>
-				<button class="btn-main">Зарегистрироваться</button>
-				<div class="form-bottom-descr">Регистрируясь, вы соглашаетесь с пользовательским соглашением</div>
-				<div class="line-authorization">
-					<p>Или войти с помощью:</p>
-					<a href="#" class="btn-social btn-social_fb"><img src="img/ic_author1.svg" alt="alt"></a>
-					<a href="#" class="btn-social btn-social_gl"><img src="img/ic_author2.svg" alt="alt"></a>
-				</div>
-				<div class="bottom-authorization">
-					<p>У вас есть аккаунт?  <a href="#modal-authorization" class="link-main fancybox">Войти</a></p>
-				</div>
-			</form>
-		</div>
-	</div>
-
-	<div id="modal-confirm-registration" class="modal-block">
-		<div class="modal-wrap modal-wrap_page">
-			<div class="modal-block__title">Вход в аккаунт</div>
-			<div class="modal-block__descr">На указанный телефон / почту был отправлен код подтверждения. Введите его в поле.</div>
-			<form>
-				<div class="item-form">
-					<input type="password" required="required" class="rfield">
-					<div class="item-form__descr">Код</div>
-					<div class="show-password"></div>
-				</div>
-				<div class="links-input">
-					<a href="#" class="link-main">Отправить код снова</a>
-					<a href="#" class="link-main">Изменить данные</a>
-				</div>
-				<button class="btn-main">Подтвердить код</button>
-				<div class="form-bottom-descr">Регистрируясь, вы соглашаетесь с пользовательским соглашением</div>
-				<div class="line-authorization">
-					<p>Или войти с помощью:</p>
-					<a href="#" class="btn-social btn-social_fb"><img src="img/ic_author1.svg" alt="alt"></a>
-					<a href="#" class="btn-social btn-social_gl"><img src="img/ic_author2.svg" alt="alt"></a>
-				</div>
-				<div class="bottom-authorization">
-					<p>У вас есть аккаунт?  <a href="#modal-authorization" class="link-main fancybox">Войти</a></p>
-				</div>
-			</form>
 		</div>
 	</div>
 

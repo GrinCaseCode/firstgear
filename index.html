@@ -14,6 +14,7 @@
 	<link rel="shortcut icon" href="favicon.png" />
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
 	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="libs/ion.rangeSlider-master/css/ion.rangeSlider.min.css" />
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
@@ -30,7 +31,7 @@
 				<img src="img/logo.svg" alt="alt">
 			</a>
 			<ul class="nav-mobile">
-				<li><a href="#"><span class="nav-mobile__icon nav-mobile__icon_icon1"></span>Каталог товаров <i class="far fa-angle-right"></i></a></li>
+				<li><a href="main-section.html"><span class="nav-mobile__icon nav-mobile__icon_icon1"></span>Каталог товаров <i class="far fa-angle-right"></i></a></li>
 				<li class="nav-mobile__sale"><a href="#"><span class="nav-mobile__icon nav-mobile__icon_icon2"></span>Горячие скидки <i class="far fa-angle-right"></i></a></li>
 				<li><a href="#"><span class="nav-mobile__icon nav-mobile__icon_icon3"></span>Автосервис <i class="far fa-angle-right"></i></a></li>
 			</ul>
@@ -98,6 +99,7 @@
 						</div>
 						<div class="form-search">
 							<form>
+								<div class="btn-form-back"></div>
 								<input type="text" class="rfield" placeholder="Поиск в каталоге товаров" required="required">
 								<div class="btn-search"></div>
 								<div class="btn-clear-search"></div>
@@ -106,8 +108,8 @@
 								<div class="popup-search__top">
 									<div class="popup-search__title">Найденные категории</div>
 									<ul class="popup-search__categories">
-										<li><a href="#">Полироли (167)</a></li>
-										<li><a href="#">Чистящие средства (6)</a></li>
+										<li><a href="#">Полироли (167)<i class="far fa-angle-right"></i></a></li>
+										<li><a href="#">Чистящие средства (6)<i class="far fa-angle-right"></i></a></li>
 									</ul>
 								</div>
 								<div class="wrap-search">
@@ -1094,7 +1096,7 @@
 								<img src="img/product1.png" alt="alt">
 							</div>
 							<div class="item-product__brand">Vatoil</div>
-							<div class="item-product__name">Тормозная жидкость Vatoil DOT 4 1л (50117)</div>
+							<a href="#" class="item-product__name">Тормозная жидкость Vatoil DOT 4 1л (50117)</a>
 							<div class="item-product__bottom">
 								<div class="item-product__left">
 									<div class="item-product__price"><span>180</span> грн.</div>
@@ -1123,7 +1125,7 @@
 								<img src="img/product2.png" alt="alt">
 							</div>
 							<div class="item-product__brand">A-MEGA</div>
-							<div class="item-product__name">Аккумулятор A-MEGA 6СТ-60 АЗ (1) Standard</div>
+							<a href="#" class="item-product__name">Аккумулятор A-MEGA 6СТ-60 АЗ (1) Standard</a>
 							<div class="item-product__bottom">
 								<div class="item-product__left">
 									<div class="item-product__price"><span>1200</span> грн.</div>
@@ -1153,7 +1155,7 @@
 								<img src="img/product3.png" alt="alt">
 							</div>
 							<div class="item-product__brand">SAKURA</div>
-							<div class="item-product__name">Диск SAKURA 6,5х15 5/105 ET35 DIA 56.6 алмаз</div>
+							<a href="#" class="item-product__name">Диск SAKURA 6,5х15 5/105 ET35 DIA 56.6 алмаз</a>
 							<div class="item-product__bottom">
 								<div class="item-product__left">
 									<div class="item-product__price"><span>1000</span> грн.</div>
@@ -1184,7 +1186,7 @@
 								<img src="img/product4.png" alt="alt">
 							</div>
 							<div class="item-product__brand">MOTUL</div>
-							<div class="item-product__name">MOTUL Dexron IID 2л (325902)</div>
+							<a href="#" class="item-product__name">MOTUL Dexron IID 2л (325902)</a>
 							<div class="item-product__bottom">
 								<div class="item-product__left">
 									<div class="item-product__price item-product__price_new"><span>450</span> грн.</div>
@@ -1215,7 +1217,7 @@
 								<img src="img/product5.png" alt="alt">
 							</div>
 							<div class="item-product__brand">Globex</div>
-							<div class="item-product__name">Видеорегистратор Globex GE-112</div>
+							<a href="#" class="item-product__name">Видеорегистратор Globex GE-112</a>
 							<div class="item-product__bottom">
 								<div class="item-product__left">
 									<div class="item-product__price"><span>800</span> грн.</div>
@@ -1245,7 +1247,7 @@
 								<img src="img/product1.png" alt="alt">
 							</div>
 							<div class="item-product__brand">Vatoil</div>
-							<div class="item-product__name">Тормозная жидкость Vatoil DOT 4 1л (50117)</div>
+							<a href="#" class="item-product__name">Тормозная жидкость Vatoil DOT 4 1л (50117)</a>
 							<div class="item-product__bottom">
 								<div class="item-product__left">
 									<div class="item-product__price"><span>180</span> грн.</div>
@@ -1275,7 +1277,7 @@
 								<img src="img/product3.png" alt="alt">
 							</div>
 							<div class="item-product__brand">SAKURA</div>
-							<div class="item-product__name">Диск SAKURA 6,5х15 5/105 ET35 DIA 56.6 алмаз</div>
+							<a href="#" class="item-product__name">Диск SAKURA 6,5х15 5/105 ET35 DIA 56.6 алмаз</a>
 							<div class="item-product__bottom">
 								<div class="item-product__left">
 									<div class="item-product__price"><span>1000</span> грн.</div>
@@ -1306,7 +1308,7 @@
 								<img src="img/product4.png" alt="alt">
 							</div>
 							<div class="item-product__brand">MOTUL</div>
-							<div class="item-product__name">MOTUL Dexron IID 2л (325902)</div>
+							<a href="#" class="item-product__name">MOTUL Dexron IID 2л (325902)</a>
 							<div class="item-product__bottom">
 								<div class="item-product__left">
 									<div class="item-product__price item-product__price_new"><span>450</span> грн.</div>
@@ -1346,7 +1348,7 @@
 								<img src="img/product3.png" alt="alt">
 							</div>
 							<div class="item-product__brand">SAKURA</div>
-							<div class="item-product__name">Диск SAKURA 6,5х15 5/105 ET35 DIA 56.6 алмаз</div>
+							<a href="#" class="item-product__name">Диск SAKURA 6,5х15 5/105 ET35 DIA 56.6 алмаз</a>
 							<div class="item-product__bottom">
 								<div class="item-product__left">
 									<div class="item-product__price item-product__price_new"><span>1000</span> грн.</div>
@@ -1376,7 +1378,7 @@
 								<img src="img/product5.png" alt="alt">
 							</div>
 							<div class="item-product__brand">Globex</div>
-							<div class="item-product__name">Видеорегистратор Globex GE-112</div>
+							<a href="#" class="item-product__name">Видеорегистратор Globex GE-112</a>
 							<div class="item-product__bottom">
 								<div class="item-product__left">
 									<div class="item-product__price item-product__price_new"><span>800</span> грн.</div>
@@ -1408,7 +1410,7 @@
 								<img src="img/product4.png" alt="alt">
 							</div>
 							<div class="item-product__brand">MOTUL</div>
-							<div class="item-product__name">MOTUL Dexron IID 2л (325902)</div>
+							<a href="#" class="item-product__name">MOTUL Dexron IID 2л (325902)</a>
 							<div class="item-product__bottom">
 								<div class="item-product__left">
 									<div class="item-product__price item-product__price_new"><span>450</span> грн.</div>
@@ -1439,7 +1441,7 @@
 								<img src="img/product1.png" alt="alt">
 							</div>
 							<div class="item-product__brand">Vatoil</div>
-							<div class="item-product__name">Тормозная жидкость Vatoil DOT 4 1л (50117)</div>
+							<a href="#" class="item-product__name">Тормозная жидкость Vatoil DOT 4 1л (50117)</a>
 							<div class="item-product__bottom">
 								<div class="item-product__left">
 									<div class="item-product__price item-product__price_new"><span>180</span> грн.</div>
@@ -1471,7 +1473,7 @@
 								<img src="img/product2.png" alt="alt">
 							</div>
 							<div class="item-product__brand">A-MEGA</div>
-							<div class="item-product__name">Аккумулятор A-MEGA 6СТ-60 АЗ (1) Standard</div>
+							<a href="#" class="item-product__name">Аккумулятор A-MEGA 6СТ-60 АЗ (1) Standard</a>
 							<div class="item-product__bottom">
 								<div class="item-product__left">
 									<div class="item-product__price item-product__price_new"><span>1200</span> грн.</div>
@@ -1501,7 +1503,7 @@
 								<img src="img/product5.png" alt="alt">
 							</div>
 							<div class="item-product__brand">Globex</div>
-							<div class="item-product__name">Видеорегистратор Globex GE-112</div>
+							<a href="#" class="item-product__name">Видеорегистратор Globex GE-112</a>
 							<div class="item-product__bottom">
 								<div class="item-product__left">
 									<div class="item-product__price item-product__price_new"><span>800</span> грн.</div>
@@ -1533,7 +1535,7 @@
 								<img src="img/product4.png" alt="alt">
 							</div>
 							<div class="item-product__brand">MOTUL</div>
-							<div class="item-product__name">MOTUL Dexron IID 2л (325902)</div>
+							<a href="#" class="item-product__name">MOTUL Dexron IID 2л (325902)</a>
 							<div class="item-product__bottom">
 								<div class="item-product__left">
 									<div class="item-product__price item-product__price_new"><span>450</span> грн.</div>
@@ -1564,7 +1566,7 @@
 								<img src="img/product1.png" alt="alt">
 							</div>
 							<div class="item-product__brand">Vatoil</div>
-							<div class="item-product__name">Тормозная жидкость Vatoil DOT 4 1л (50117)</div>
+							<a href="#" class="item-product__name">Тормозная жидкость Vatoil DOT 4 1л (50117)</a>
 							<div class="item-product__bottom">
 								<div class="item-product__left">
 									<div class="item-product__price item-product__price_new"><span>180</span> грн.</div>
@@ -1603,7 +1605,7 @@
 								<img src="img/product1_1.png" alt="alt">
 							</div>
 							<div class="item-product__brand">MOBIL</div>
-							<div class="item-product__name">Моторное масло MOBIL 1 ESP 5W-30 4л</div>
+							<a href="#" class="item-product__name">Моторное масло MOBIL 1 ESP 5W-30 4л</a>
 							<div class="item-product__bottom">
 								<div class="item-product__left">
 									<div class="item-product__price"><span>1000</span> грн.</div>
@@ -1632,7 +1634,7 @@
 								<img src="img/product1_2.png" alt="alt">
 							</div>
 							<div class="item-product__brand">Doctor Wax</div>
-							<div class="item-product__name">Масло моторное DIESEL LEICHTLAUF 10W-40 5 Л 8034</div>
+							<a href="#" class="item-product__name">Масло моторное DIESEL LEICHTLAUF 10W-40 5 Л 8034</a>
 							<div class="item-product__bottom">
 								<div class="item-product__left">
 									<div class="item-product__price"><span>1200</span> грн.</div>
@@ -1663,7 +1665,7 @@
 								<img src="img/product1_3.png" alt="alt">
 							</div>
 							<div class="item-product__brand">MOBIL</div>
-							<div class="item-product__name">Моторное масло MOBIL 1 ESP 5W-30 4л</div>
+							<a href="#" class="item-product__name">Моторное масло MOBIL 1 ESP 5W-30 4л</a>
 							<div class="item-product__bottom">
 								<div class="item-product__left">
 									<div class="item-product__price item-product__price_new"><span>800</span> грн.</div>
@@ -1693,7 +1695,7 @@
 								<img src="img/product1_4.png" alt="alt">
 							</div>
 							<div class="item-product__brand">Doctor Wax</div>
-							<div class="item-product__name">Масло моторное DIESEL LEICHTLAUF 10W-40 5 Л 8034</div>
+							<a href="#" class="item-product__name">Масло моторное DIESEL LEICHTLAUF 10W-40 5 Л 8034</a>
 							<div class="item-product__bottom">
 								<div class="item-product__left">
 									<div class="item-product__price"><span>1200</span> грн.</div>
@@ -1723,7 +1725,7 @@
 								<img src="img/product1_5.png" alt="alt">
 							</div>
 							<div class="item-product__brand">MOBIL</div>
-							<div class="item-product__name">Моторное масло MOBIL 1 ESP 5W-30 4л</div>
+							<a href="#" class="item-product__name">Моторное масло MOBIL 1 ESP 5W-30 4л</a>
 							<div class="item-product__bottom">
 								<div class="item-product__left">
 									<div class="item-product__price"><span>1000</span> грн.</div>
@@ -1753,7 +1755,7 @@
 								<img src="img/product1_1.png" alt="alt">
 							</div>
 							<div class="item-product__brand">MOBIL</div>
-							<div class="item-product__name">Моторное масло MOBIL 1 ESP 5W-30 4л</div>
+							<a href="#" class="item-product__name">Моторное масло MOBIL 1 ESP 5W-30 4л</a>
 							<div class="item-product__bottom">
 								<div class="item-product__left">
 									<div class="item-product__price"><span>1000</span> грн.</div>
@@ -1782,7 +1784,7 @@
 								<img src="img/product1_2.png" alt="alt">
 							</div>
 							<div class="item-product__brand">Doctor Wax</div>
-							<div class="item-product__name">Масло моторное DIESEL LEICHTLAUF 10W-40 5 Л 8034</div>
+							<a href="#" class="item-product__name">Масло моторное DIESEL LEICHTLAUF 10W-40 5 Л 8034</a>
 							<div class="item-product__bottom">
 								<div class="item-product__left">
 									<div class="item-product__price"><span>1200</span> грн.</div>
@@ -1813,7 +1815,7 @@
 								<img src="img/product1_3.png" alt="alt">
 							</div>
 							<div class="item-product__brand">MOBIL</div>
-							<div class="item-product__name">Моторное масло MOBIL 1 ESP 5W-30 4л</div>
+							<a href="#" class="item-product__name">Моторное масло MOBIL 1 ESP 5W-30 4л</a>
 							<div class="item-product__bottom">
 								<div class="item-product__left">
 									<div class="item-product__price item-product__price_new"><span>800</span> грн.</div>
@@ -1955,10 +1957,10 @@
 				</div>
 				<div class="show_mobile">
 					<ul class="list-mobile-footer">
-						<li><a href="#">Доставка и оплата <i class="far fa-angle-right"></i></a></li>
-						<li><a href="#">Возврат и обмен <i class="far fa-angle-right"></i></a></li>
-						<li><a href="#">О нас <i class="far fa-angle-right"></i></a></li>
-						<li><a href="#">Контакты <i class="far fa-angle-right"></i></a></li>
+						<li><a href="mobile-delivery.html">Доставка и оплата <i class="far fa-angle-right"></i></a></li>
+						<li><a href="mobile-return.html">Возврат и обмен <i class="far fa-angle-right"></i></a></li>
+						<li><a href="mobile-about.html">О нас <i class="far fa-angle-right"></i></a></li>
+						<li><a href="mobile-contacts.html">Контакты <i class="far fa-angle-right"></i></a></li>
 					</ul>
 				</div>
 			</div>
@@ -2020,6 +2022,7 @@
 			<div class="success-send"><div class="success-send__icon"></div>Спасибо за заказ. Наш менеджер свяжется с вами в течение 5 минут, чтобы уточнить что вы хочете.</div>
 		</div>
 	</div>
+
 
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
