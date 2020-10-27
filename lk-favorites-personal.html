@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="libs/ion.rangeSlider-master/css/ion.rangeSlider.min.css" />
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css?ver=1.12" />
+	<link rel="stylesheet" href="css/media.css?ver=1.12" />
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<div class="menu-mobile">
+			<a href="#" class="logo">
+				<img src="img/logo.svg" alt="alt">
+			</a>
+			<ul class="nav-mobile">
+				<li><a href="main-section.html"><span class="nav-mobile__icon nav-mobile__icon_icon1"></span>Каталог товаров <i class="far fa-angle-right"></i></a></li>
+				<li class="nav-mobile__sale"><a href="#"><span class="nav-mobile__icon nav-mobile__icon_icon2"></span>Горячие скидки <i class="far fa-angle-right"></i></a></li>
+				<li><a href="#"><span class="nav-mobile__icon nav-mobile__icon_icon3"></span>Автосервис <i class="far fa-angle-right"></i></a></li>
+			</ul>
+			<div class="menu-mobile__name">Сергей Иванов</div>
+			<ul class="links-menu">
+				<li><a href="#"><span class="links-menu__icon links-menu__icon_1"></span>Личные данные</a></li>
+				<li><a href="#"><span class="links-menu__icon links-menu__icon_2"></span>Мои заказы</a></li>
+				<li><a href="#"><span class="links-menu__icon links-menu__icon_3"></span>Избранное <strong> (2)</strong></a></li>
+			</ul>
+			<a href="#" class="btn-login"><span class="btn-login__icon"></span>Выйти из аккаунта</a>
+			<div class="menu-mobile__bottom">
+				<ul>
+					<li>
+						<a href="tel:0981234567" class="item-phone">098 123 45 67</a>
+					</li>
+					<li>
+						<a href="tel:0981234567" class="item-phone">098 123 45 67</a>
+					</li>
+					<li>
+						<a href="tel:0981234567" class="item-phone">098 123 45 67</a>
+					</li>
+				</ul>
+				<div class="popup-phones__bottom">
+					<p><span>График работы:</span></p>
+					<p>в рабочие дни с 9:00 до 19:00</p>
+					<p>суббота с 9:00 до 15:00</p>
+					<a href="#callback" class="btn-transparent btn-transparent_black fancybox">Обратный звонок</a>
+				</div>
+			</div>
+		</div>
+
+		<header class="header header_page">
+
+			<div class="header__wrap">
+				<div class="container">
+					<div class="header__top">
+						<div class="btn-menu"></div>
+						<a href="#" class="logo">
+							<img src="img/logo.svg" alt="alt">
+						</a>
+						<div class="header__phone">
+							<a href="tel:0981234567" class="item-phone">098 123 45 67</a>
+							<div class="popup-phones">
+								<div class="popup-phones__top">
+									<ul>
+										<li>
+											<a href="tel:0981234567" class="item-phone">098 123 45 67</a>
+										</li>
+										<li>
+											<a href="tel:0981234567" class="item-phone">098 123 45 67</a>
+										</li>
+										<li>
+											<a href="tel:0981234567" class="item-phone">098 123 45 67</a>
+										</li>
+									</ul>
+									<a href="mailto:firstgera_info@gmail.com" class="item-mail">firstgera_info@gmail.com</a>
+								</div>
+								<div class="popup-phones__bottom">
+									<p><span>График работы:</span></p>
+									<p>в рабочие дни с 9:00 до 19:00</p>
+									<p>суббота с 9:00 до 15:00</p>
+									<a href="#callback" class="btn-transparent btn-transparent_black fancybox">Обратный звонок</a>
+								</div>
+							</div>
+						</div>
+						<div class="form-search">
+							<form>
+								<div class="btn-form-back"></div>
+								<input type="text" class="rfield" placeholder="Поиск в каталоге товаров" required="required">
+								<div class="btn-search"></div>
+								<div class="btn-clear-search"></div>
+							</form>
+							<div class="popup-search">
+								<div class="popup-search__top">
+									<div class="popup-search__title">Найденные категории</div>
+									<ul class="popup-search__categories">
+										<li><a href="#">Полироли (167)<i class="far fa-angle-right"></i></a></li>
+										<li><a href="#">Чистящие средства (6)<i class="far fa-angle-right"></i></a></li>
+									</ul>
+								</div>
+								<div class="wrap-search">
+									<div class="popup-search__title">Найденные товары</div>
+									<a href="#" class="item-search">
+										<span class="item-search__image">
+											<img src="img/item_search1.jpg" alt="alt">
+										</span>
+										<span class="item-search__name">Масло моторное DIESEL LEICHTLAUF <br>10W-40 5 Л 8034</span>
+										<span class="item-search__right">
+											<span class="price-prod price-prod_old"><span>1200</span> грн.</span>
+											<span class="price-prod price-prod_new"><span>800</span> грн.</span>
+										</span>
+									</a>
+									<a href="#" class="item-search">
+										<span class="item-search__image">
+											<img src="img/item_search2.jpg" alt="alt">
+										</span>
+										<span class="item-search__name">Моторное масло MOBIL 1 <br>ESP 5W-30 4л</span>
+										<span class="item-search__right">
+											<span class="price-prod"><span>1000</span> грн.</span>
+										</span>
+									</a>
+									<a href="#" class="item-search">
+										<span class="item-search__image">
+											<img src="img/item_search1.jpg" alt="alt">
+										</span>
+										<span class="item-search__name">Масло моторное DIESEL LEICHTLAUF <br>10W-40 5 Л 8034</span>
+										<span class="item-search__right">
+											<span class="price-prod price-prod_old"><span>1200</span> грн.</span>
+											<span class="price-prod price-prod_new"><span>800</span> грн.</span>
+										</span>
+									</a>
+									<a href="#" class="item-search">
+										<span class="item-search__image">
+											<img src="img/item_search2.jpg" alt="alt">
+										</span>
+										<span class="item-search__name">Моторное масло MOBIL 1 <br>ESP 5W-30 4л</span>
+										<span class="item-search__right">
+											<span class="price-prod"><span>1000</span> грн.</span>
+										</span>
+									</a>
+									<a href="#" class="item-search">
+										<span class="item-search__image">
+											<img src="img/item_search1.jpg" alt="alt">
+										</span>
+										<span class="item-search__name">Масло моторное DIESEL LEICHTLAUF <br>10W-40 5 Л 8034</span>
+										<span class="item-search__right">
+											<span class="price-prod price-prod_old"><span>1200</span> грн.</span>
+											<span class="price-prod price-prod_new"><span>800</span> грн.</span>
+										</span>
+									</a>
+									<a href="#" class="item-search">
+										<span class="item-search__image">
+											<img src="img/item_search2.jpg" alt="alt">
+										</span>
+										<span class="item-search__name">Моторное масло MOBIL 1 <br>ESP 5W-30 4л</span>
+										<span class="item-search__right">
+											<span class="price-prod"><span>1000</span> грн.</span>
+										</span>
+									</a>
+									<a href="#" class="item-search">
+										<span class="item-search__image">
+											<img src="img/item_search1.jpg" alt="alt">
+										</span>
+										<span class="item-search__name">Масло моторное DIESEL LEICHTLAUF <br>10W-40 5 Л 8034</span>
+										<span class="item-search__right">
+											<span class="price-prod price-prod_old"><span>1200</span> грн.</span>
+											<span class="price-prod price-prod_new"><span>800</span> грн.</span>
+										</span>
+									</a>
+									<a href="#" class="item-search">
+										<span class="item-search__image">
+											<img src="img/item_search2.jpg" alt="alt">
+										</span>
+										<span class="item-search__name">Моторное масло MOBIL 1 <br>ESP 5W-30 4л</span>
+										<span class="item-search__right">
+											<span class="price-prod"><span>1000</span> грн.</span>
+										</span>
+									</a>
+								</div>
+								<a href="#" class="show-search">Посмотреть все результаты поиска <i class="far fa-angle-right"></i></a>
+							</div>
+						</div>
+						<div class="header__right">
+							<a href="#" class="mobile-search-btn"></a>
+							<div class="wrap-personal">
+								<a href="#" class="item-personal item-personal_favorites">
+									<span class="item-personal__icon">
+										<span class="item-personal__value">2</span>
+									</span>
+									<span class="item-personal__name">Избранное</span>
+								</a>
+							</div>
+							<div class="wrap-personal hidden_mobile">
+								<a href="#" class="item-personal item-personal_cabinet">
+									<span class="item-personal__icon">
+									</span>
+									<span class="item-personal__name">Кабинет</span>
+								</a>
+								<div class="popup-personal">
+									<div class="popup-personal__name">Сергей Иванов</div>
+									<ul class="links-menu">
+										<li><a href="#"><span class="links-menu__icon links-menu__icon_1"></span>Личные данные</a></li>
+										<li><a href="#"><span class="links-menu__icon links-menu__icon_2"></span>Мои заказы</a></li>
+										<li><a href="#"><span class="links-menu__icon links-menu__icon_3"></span>Избранное <strong> (2)</strong></a></li>
+									</ul>
+									<a href="#" class="btn-login"><span class="btn-login__icon"></span>Выйти из аккаунта</a>
+								</div>
+							</div>
+							<div class="wrap-personal">
+								<a href="#" class="item-personal item-personal_basket">
+									<span class="item-personal__icon">
+										<span class="item-personal__value">1</span>
+									</span>
+									<span class="item-personal__name">Корзина</span>
+								</a>
+								<div class="popup-personal">
+									<div class="popup-personal__text">
+										<p>В корзине: <span>2 товара</span></p>
+										<p>На сумму: <span>260 грн.</span></p>
+									</div>
+									<div class="bottom-popup-basket">
+										<a href="#" class="btn-main">Оформить заказ</a>
+										<br>
+										<a href="#" class="link-arrow">Перейти в корзину <i class="far fa-angle-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__bottom">
+				<div class="container">
+					<div class="d_flex">
+						<div class="header-catalog">
+							<div class="header-catalog__btn">Каталог товаров</div>
+							<div class="menu-overflow"></div>
+							<ul class="list-catalog">
+								<li>
+									<div class="list-catalog__link">Аккумуляторы <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown2.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Омыватели стекла</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown3.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Охлаждающие жидкости</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown5.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Герметики и клеи</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown6.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Краски и восстановители цвета</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown7.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Ароматизаторы</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-catalog__link">Шины <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown3.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Охлаждающие жидкости</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown2.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Омыватели стекла</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-catalog__link">Диски <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown2.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Омыватели стекла</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-catalog__link">Щетки стеклоочистителя <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-catalog__link">Автоковрики <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-catalog__link">Масла <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-catalog__link">Технические жидкости <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-catalog__link">Автохимия <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-catalog__link">Автозапчасти <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-catalog__link">Расходные материалы <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-catalog__link">Инструменты и оборудование <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-catalog__link">Охранные системы <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="list-catalog__hidden">
+									<div class="list-catalog__link">Электроника <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="list-catalog__hidden">
+									<div class="list-catalog__link">Электрооборудивание <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="list-catalog__hidden">
+									<div class="list-catalog__link">Видеорегистраторы <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="list-catalog__hidden">
+									<div class="list-catalog__link">Оптика <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="list-catalog__hidden">
+									<div class="list-catalog__link">Багажники и крепления <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="list-catalog__hidden">
+									<div class="list-catalog__link">В салон авто <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="list-catalog__hidden">
+									<div class="list-catalog__link">Туризм <i class="far fa-angle-right"></i></div>
+									<div class="dropdowm-catalog">
+										<div class="row">
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown1.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Автокосметика</span>
+												</a>
+											</div>
+											<div class="col-lg-3 col-md-6">
+												<a href="#" class="item-dropdown">
+													<span class="item-dropdown__image">
+														<img src="img/dropdown4.png" alt="alt">
+													</span>
+													<span class="item-dropdown__name">Антикоррозийная обработка</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<ul class="list-nav">
+							<li class="active"><a href="#"><span class="list-nav__icon list-nav__icon_1"></span><span>Горячие скидки</span></a></li>
+							<li><a href="#"><span class="list-nav__icon list-nav__icon_2"></span><span>Автосервис</span></a></li>
+							<li><a href="#">Доставка и оплата </a></li>
+							<li><a href="#">Возврат и обмен</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">О нас</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="lk">
+			<div class="container">
+				<ul class="breadcumbs">
+					<li><a href="#">Главная</a> <i class="far fa-angle-right"></i></li>
+					<li>Личный кабинет</li>
+				</ul>
+				<a href="#" class="btn-back"></a>
+				<h1 class="title-section hidden_adptive">Личный кабинет</h1>
+				<h1 class="title-section show_adaptive">Личные данные</h1>
+				<div class="row row_main">
+					<div class="col-lg-3 col_leftlk">
+						<div class="lk-block">
+							<div class="lk-block__line">
+								<div class="lk-block__name">Сергей Иванов</div>
+							</div>
+							<div class="lk-block__line">
+								<ul class="links-menu">
+									<li class="active"><a href="#"><span class="links-menu__icon links-menu__icon_1"></span>Личные данные</a></li>
+									<li><a href="#"><span class="links-menu__icon links-menu__icon_2"></span>Мои заказы</a></li>
+									<li><a href="#"><span class="links-menu__icon links-menu__icon_3"></span>Избранное <strong> (2)</strong></a></li>
+								</ul>
+							</div>
+							<a href="#" class="btn-login"><span class="btn-login__icon"></span>Выйти из аккаунта</a>
+						</div>
+					</div>
+					<div class="col-lg-9 col_rightlk">
+						<div class="lk-block">
+							<div class="lk-block__line hidden_adptive">
+								<div class="lk-block__title">Личная информация</div>
+							</div>
+							<div class="lk-block__line lk-block__line_flex">
+								<p>Имя: <span>Сергей Иванов</span></p>
+								<a href="#modal-edit-name" class="link-main link-main_edit fancybox">Изменить имя</a>
+							</div>
+							<div class="lk-block__line lk-block__line_flex">
+								<p>Телефон: <span>098 123 45 67</span></p>
+								<a href="#modal-edit-phone" class="link-main link-main_edit fancybox">Изменить телефон</a>
+							</div>
+							<div class="lk-block__line lk-block__line_flex">
+								<p>Почта: <span>sergei_ivanov@gmail.com</span></p>
+								<a href="#modal-edit-email" class="link-main link-main_edit fancybox">Изменить почту</a>
+							</div>
+							<div class="lk-block__line">
+								<div class="lk-block__title">Вход в кабинет через соц. сети</div>
+								<div class="lk-social-wrap">
+									<div class="lk-social">
+										<div class="lk-social__icon">
+											<img src="img/lk_social1.svg" alt="alt">
+										</div>
+										<div class="lk-social__name">Сергей Иванов</div>
+										<a href="#" class="link-main">Отменить связь</a>
+									</div>
+									<div class="lk-social">
+										<a href="#" class="lk-social__link"></a>
+										<div class="lk-social__icon">
+											<img src="img/lk_social2.svg" alt="alt">
+										</div>
+										<p>Связать с Facebook</p>
+									</div>
+								</div>
+							</div>
+							<div class="lk-block__line">
+								<a href="#modal-remove" class="remove-account fancybox"><span class="remove-account__icon"></span>Удалить аккаунт навсегда</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="btn-transparent btn-transparent_black btn-close-mobile">Закрыть</a>
+		</div>
+
+		<footer class="footer hidden_adptive">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 hidden_mobile">
+						<div class="footer__title">Каталог</div>
+						<ul class="list-footer">
+							<li><a href="#">Аккумуляторы</a></li>
+							<li><a href="#">Диски</a></li>
+							<li><a href="#">Шины</a></li>
+							<li><a href="#">Щетки стеклоочистителя</a></li>
+							<li><a href="#">Автоковрики</a></li>
+							<li><a href="#">Масла</a></li>
+							<li><a href="#">Технические жидкости</a></li>
+							<li><a href="#">Автохимия</a></li>
+							<li><a href="#">Автозапчасти</a></li>
+							<li><a href="#">Расходные материалы</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 hidden_mobile">
+						<div class="footer__title"></div>
+						<ul class="list-footer">
+							<li><a href="#">Инструменты и оборудование</a></li>
+							<li><a href="#">Электроника</a></li>
+							<li><a href="#">Электрооборудование</a></li>
+							<li><a href="#">Видеорегистраторы</a></li>
+							<li><a href="#">Оптика</a></li>
+							<li><a href="#">Туризм</a></li>
+							<li><a href="#">Багажники и крепления</a></li>
+							<li><a href="#">В багажник</a></li>
+							<li><a href="#">В салон авто</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 hidden_mobile">
+						<div class="footer__title">Покупателям</div>
+						<ul class="list-footer">
+							<li><a href="#">Акции и новинки</a></li>
+							<li><a href="#">Автосервис</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">Возврат и обмен</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">О нас</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 hidden_mobile">
+						<div class="footer__title">Наши контакты</div>
+						<ul class="list-phones">
+							<li><a href="tel:0981234567" class="footer__phone">098 123 45 67</a></li>
+							<li><a href="tel:0981234567" class="footer__phone">098 123 45 67</a></li>
+							<li><a href="tel:0981234567" class="footer__phone">098 123 45 67</a></li>
+						</ul>
+						<a href="mailto:firstgera_info@gmail.com" class="footer__mail">firstgera_info@gmail.com</a>
+						<ul class="social-footer">
+							<li><a href="#"><img src="img/social1.svg" alt="alt"></a></li>
+							<li><a href="#"><img src="img/social2.svg" alt="alt"></a></li>
+							<li><a href="#"><img src="img/social3.svg" alt="alt"></a></li>
+							<li><a href="#"><img src="img/social4.svg" alt="alt"></a></li>
+							<li><a href="#"><img src="img/social5.svg" alt="alt"></a></li>
+						</ul>
+						<a href="#callback" class="btn-transparent fancybox">Обратный звонок</a>
+					</div>
+				</div>
+				<div class="show_mobile">
+					<ul class="list-mobile-footer">
+						<li><a href="mobile-delivery.html">Доставка и оплата <i class="far fa-angle-right"></i></a></li>
+						<li><a href="mobile-return.html">Возврат и обмен <i class="far fa-angle-right"></i></a></li>
+						<li><a href="mobile-about.html">О нас <i class="far fa-angle-right"></i></a></li>
+						<li><a href="mobile-contacts.html">Контакты <i class="far fa-angle-right"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-md-7">
+							<div class="show_mobile">
+								<ul class="social-footer">
+									<li><a href="#"><img src="img/social1.svg" alt="alt"></a></li>
+									<li><a href="#"><img src="img/social2.svg" alt="alt"></a></li>
+									<li><a href="#"><img src="img/social3.svg" alt="alt"></a></li>
+									<li><a href="#"><img src="img/social4.svg" alt="alt"></a></li>
+									<li><a href="#"><img src="img/social5.svg" alt="alt"></a></li>
+								</ul>
+							</div>
+							<div class="footer__left">
+								<a href="#" class="logo hidden_mobile">
+									<img src="img/logo2.svg" alt="alt">
+								</a>
+								<div class="copyright">© FIRSTGEAR автомагазин 2020</div>
+							</div>
+						</div>
+						<div class="col-md-5 hidden_mobile">
+							<div class="footer__right">
+								<p>Разработано совместно с</p>
+								<img src="img/create.svg" alt="alt">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<div class="overlay-mobile"></div>	
+
+	<div id="callback" class="modal-block">
+		<div class="modal-wrap">
+			<div class="modal-block__title">Обратный звонок</div>
+			<div class="modal-block__descr">Нужна помощь при выборе товара? Менеджер свяжется с вами в течение 3 минут и поможет.</div>
+			<form>
+				<div class="item-form">
+					<input type="text" required="required" class="rfield">
+					<div class="item-form__descr">Ваше имя</div>
+				</div>
+				<div class="item-form">
+					<input type="text" required="required" class="rfield input-phone">
+					<div class="item-form__descr">Ваш телефон</div>
+				</div>
+				<button class="btn-main">Отправить</button>
+			</form>
+		</div>
+	</div>
+
+	<div id="modal-review" class="modal-block">
+		<div class="modal-wrap modal-wrap-review">
+			<div class="modal-block__title">Отзыв</div>
+			<form>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="item-form">
+							<input type="text" required="required" class="rfield">
+							<div class="item-form__descr">Ваше имя</div>
+						</div>
+						<div class="item-form">
+							<input type="text" required="required" class="rfield">
+							<div class="item-form__descr">Ваша почта</div>
+						</div>
+						<div class="item-form hidden_desktop">
+							<textarea placeholder="Комментарий к заказу" class="rfield active">Поле для текстового сообщения</textarea>
+							<div class="item-form__descr">Комментарий к заказу</div>
+						</div>
+						<div class="item-form">
+							<input type="text" required="required" class="rfield">
+							<div class="item-form__descr">Достоинства</div>
+						</div>
+						<div class="item-form">
+							<input type="text" required="required" class="rfield">
+							<div class="item-form__descr">Недостатки</div>
+						</div>
+					</div>
+					<div class="col-md-6 hidden_table">
+						<div class="item-form">
+							<textarea placeholder="Комментарий к заказу" class="rfield active">Поле для текстового сообщения</textarea>
+							<div class="item-form__descr">Комментарий к заказу</div>
+						</div>
+					</div>
+				</div>
+				<div class="add-rating">
+					<p>Ваша оценка:</p>
+					<div class="star-rating">
+						<fieldset>
+							<input type="radio" id="star5_5" name="rating_5" value="5" /><label for="star5_5"></label>
+							<input type="radio" id="star4_5" checked="checked" name="rating_5" value="4" /><label for="star4_5"></label>
+							<input type="radio" id="star3_5" name="rating_5" value="3" /><label for="star3_5"></label>
+							<input type="radio" id="star2_5" name="rating_5" value="2" /><label for="star2_5"></label>
+							<input type="radio" id="star1_5" name="rating_5" value="1" /><label for="star1_5"></label>
+						</fieldset>
+					</div>
+				</div>
+				<button class="btn-main">Оставить отзыв</button>
+			</form>
+			<div class="form-bottom-descr">Регистрируясь, вы соглашаетесь с пользовательским соглашением</div>
+		</div>
+	</div>
+
+	<div id="modal-question" class="modal-block">
+		<div class="modal-wrap modal-wrap-review">
+			<div class="modal-block__title">Вопрос</div>
+			<form>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="item-form">
+							<input type="text" required="required" class="rfield">
+							<div class="item-form__descr">Ваше имя</div>
+						</div>
+						<div class="item-form">
+							<input type="text" required="required" class="rfield">
+							<div class="item-form__descr">Ваша почта</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="item-form">
+							<textarea placeholder="Комментарий к заказу" class="rfield active">Поле для текстового сообщения</textarea>
+							<div class="item-form__descr">Комментарий к заказу</div>
+						</div>
+					</div>
+				</div>
+				<button class="btn-main">Оставить вопрос</button>
+			</form>
+			<div class="form-bottom-descr">Регистрируясь, вы соглашаетесь с пользовательским соглашением</div>
+		</div>
+	</div>
+
+	<div id="modal-order-quick" class="modal-block">
+		<div class="modal-wrap modal-wrap_page">
+			<div class="modal-block__title">Быстрый заказ</div>
+			<form>
+				<div class="item-form">
+					<input type="text" required="required" class="rfield">
+					<div class="item-form__descr">Ваше имя</div>
+				</div>
+				<div class="item-form">
+					<input type="text" required="required" class="rfield input-phone">
+					<div class="item-form__descr">Ваш телефон</div>
+				</div>
+				<button class="btn-main">Отправить</button>
+				<div class="form-bottom-descr">Регистрируясь, вы соглашаетесь с пользовательским соглашением</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="thanks-callback" class="modal-block">
+		<div class="modal-wrap">
+			<div class="success-send"><div class="success-send__icon"></div>Спасибо за заказ. Наш менеджер свяжется с вами в течение 5 минут, чтобы уточнить что вы хочете.</div>
+		</div>
+	</div>
+
+	<div id="modal-edit-name" class="modal-block">
+		<div class="modal-wrap modal-wrap_page">
+			<div class="modal-block__title">Изменение имени</div>
+			<form>
+				<div class="fake-input">Имя: <span>Сергей Иванов</span></div>
+				<div class="fake-input-descr">Введите новое имя пользователя в данное поле.</div>
+				<div class="item-form">
+					<input type="text" required="required" class="rfield">
+					<div class="item-form__descr">Новое имя</div>
+				</div>
+				<button class="btn-main">Изменить имя</button>
+			</form>
+		</div>
+	</div>
+
+	<div id="modal-edit-phone" class="modal-block">
+		<div class="modal-wrap modal-wrap_page">
+			<div class="modal-block__title">Изменение телефона</div>
+			<form>
+				<div class="fake-input">Телефон: <span>097 123 45 67</span></div>
+				<div class="fake-input-descr">Введите новый телефон в данное поле.</div>
+				<div class="item-form">
+					<input type="text" required="required" class="input-phone rfield">
+					<div class="item-form__descr">Новый телефон</div>
+				</div>
+				<button class="btn-main">Изменить ТЕЛЕФОН</button>
+			</form>
+		</div>
+	</div>
+
+	<div id="modal-edit-email" class="modal-block">
+		<div class="modal-wrap modal-wrap_page">
+			<div class="modal-block__title">Изменение почты</div>
+			<form>
+				<div class="fake-input">Почта: <span>sergei_ivanov@gmail.com</span></div>
+				<div class="fake-input-descr">Введите новую почту в данное поле.</div>
+				<div class="item-form">
+					<input type="text" required="required" class="rfield">
+					<div class="item-form__descr">Новая почта</div>
+				</div>
+				<button class="btn-main">Изменить почту</button>
+			</form>
+		</div>
+	</div>
+
+	<div id="send-edit-name" class="modal-block">
+		<div class="modal-wrap modal-wrap_page">
+			<div class="success-send"><div class="success-send__icon"></div>Имя успешно изменено</div>
+		</div>
+	</div>
+
+	<div id="modal-confirm-phone" class="modal-block">
+		<div class="modal-wrap modal-wrap_page">
+			<div class="modal-block__title">Изменение телефона</div>
+			<div class="modal-block__descr">На указанный телефон был отправлен код подтверждения. Введите его в поле.</div>
+			<form>
+				<div class="item-form">
+					<input type="password" required="required" class="rfield">
+					<div class="item-form__descr">Код</div>
+					<div class="show-password"></div>
+				</div>
+				<div class="links-input">
+					<a href="#" class="link-main">Отправить код снова</a>
+					<a href="#" class="link-main">Изменить данные</a>
+				</div>
+				<button class="btn-main">Подтвердить код</button>
+			</form>
+		</div>
+	</div>
+
+	<div id="send-edit-phone" class="modal-block">
+		<div class="modal-wrap modal-wrap_page">
+			<div class="success-send"><div class="success-send__icon"></div>Телефон успешно изменен</div>
+		</div>
+	</div>
+
+	<div id="modal-confirm-email" class="modal-block">
+		<div class="modal-wrap modal-wrap_page">
+			<div class="modal-block__title">Изменение почты</div>
+			<div class="modal-block__descr">На указанный телефон был отправлен код подтверждения. Введите его в поле.</div>
+			<form>
+				<div class="item-form">
+					<input type="password" required="required" class="rfield">
+					<div class="item-form__descr">Код</div>
+					<div class="show-password"></div>
+				</div>
+				<div class="links-input">
+					<a href="#" class="link-main">Отправить код снова</a>
+					<a href="#" class="link-main">Изменить данные</a>
+				</div>
+				<button class="btn-main">Подтвердить код</button>
+			</form>
+		</div>
+	</div>
+
+	<div id="send-edit-email" class="modal-block">
+		<div class="modal-wrap modal-wrap_page">
+			<div class="success-send"><div class="success-send__icon"></div>Почта успешно изменена</div>
+		</div>
+	</div>
+
+	<div id="modal-remove" class="modal-block">
+		<div class="modal-wrap modal-wrap_page">
+			<div class="modal-block__title">Удаление аккаунта</div>
+			<p class="descr-modal">Вы уверены что хотите навсегда удалить данный профиль? Вся информация о вас удалиться в нашей базе данных.</p>
+			<form>
+				<button class="btn-main">Отправить</button>
+			</form>
+		</div>
+	</div>
+
+	<div id="send-remove" class="modal-block">
+		<div class="modal-wrap modal-wrap_page">
+			<div class="success-send"><div class="success-send__icon"></div>Аккаунт успешно удален</div>
+		</div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+<![endif]--> 
+<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+<script src="libs/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
+<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+<script src="libs/mask/jquery.maskedinput.js"></script>
+<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+<script src="js/common.js?ver=1.12"></script>
+<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
